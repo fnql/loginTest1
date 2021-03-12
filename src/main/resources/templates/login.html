@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>login</title>
+    <link rel="stylesheet" href="./css/login.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <script src="./js/main.js"></script>
+</head>
+<body>
+    <div class="wrapper">
+        <!-- header 시작 -->
+        <header>
+            <div class="home">
+                <h1>
+                    <a href="./main.html">LOGIN</a>
+                </h1>
+            </div>
+        </header>
+        <!-- header 끝 -->
+        <!-- content 시작 -->
+        <section>
+            <div class="content">
+                <form id="login">
+                    <fieldset class="login_form">
+                        <legend class="hidden">로그인</legend>
+                        <div class="id_area">
+                            <div class="input_row">
+                                <span class="input_box">
+                                    <input type="text" name="id" class="id" placeholder="아이디" maxlength="41">
+                                </span>
+                                <button type="button" disabled title="delete" class="clear">🅧</button>
+                            </div>
+                        </div>
+                        <div class="pw_area">
+                            <div class="input_row">
+                                <span class="input_box">
+                                    <input type="password" name="pw" class="pw" placeholder="비밀번호" maxlength="16">
+                                </span>
+                                <button type="button" disabled title="delete" class="clear">🅧</button>
+                                <div class="capslock">
+                                    <p><strong>Caps Lock</strong>이 켜져 있습니다.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <input type="submit" title="로그인" alt="로그인" value="로그인" class="login">
+                        
+<!--                    check_info 작업 예정-->
+                        
+                        <div class="check_info">
+                            <span class="check_box">
+                                <input type="checkbox" name="nvlong">
+                                <label for="login_check">로그인 상태 유지</label>
+                            </span>
+                        </div>
+                    </fieldset>
+                </form>
+<!--
+                <div class="once_login">
+                    
+                </div>
+-->
+<!--            position 작업 예정-->
+                <div class="position">
+                    <a target="_blank" id="idinquiry" href="#">아이디 찾기</a>
+                    <span class="bar" aria-hidden="true">│</span>
+                    <a target="_blank" id="pwinquiry" href="#">비밀번호 찾기</a>
+                    <span class="bar" aria-hidden="true">│</span>
+                    <a target="_blank" id="join" href="./join.html">회원가입</a>
+                </div>
+            </div>
+        </section>
+        <!-- content 끝 -->
+<!--    footer 작업 예정-->
+        <!-- footer 시작 -->
+        <footer>
+            <ul>
+                <li><a target="_blank" href="#" class="first_li">이용약관</a></li>
+                <li><a target="_blank" href="#">개인정보처리방침</a></li>
+                <li><a target="_blank" href="#">회원정보 고객센터</a></li>
+            </ul>
+        </footer>
+        <!-- footer 끝 -->
+    </div>
+</body>
+</html>
