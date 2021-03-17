@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="UTF-8">
     <title>login</title>
@@ -21,29 +21,31 @@
         <!-- content 시작 -->
         <section>
             <div class="content">
-                <form id="login">
+                <form id="login" action="/login" method="post">
+                    <input type="hidden" th:name="${_csrf.parameterName}" th:value="${_csrf.token}" />
                     <fieldset class="login_form">
                         <legend class="hidden">로그인</legend>
                         <div class="id_area">
                             <div class="input_row">
                                 <span class="input_box">
-                                    <input type="text" name="id" class="id" placeholder="아이디" maxlength="41">
+                                    <input type="text" name="username" class="username" placeholder="아이디" maxlength="41">
                                 </span>
-                                <button type="button" disabled title="delete" class="clear">🅧</button>
+<!--                                <button type="button" disabled title="delete" class="clear">🅧</button>-->
                             </div>
                         </div>
                         <div class="pw_area">
                             <div class="input_row">
                                 <span class="input_box">
-                                    <input type="password" name="pw" class="pw" placeholder="비밀번호" maxlength="16">
+                                    <input type="password" name="password" class="pw" placeholder="비밀번호" maxlength="16">
                                 </span>
-                                <button type="button" disabled title="delete" class="clear">🅧</button>
+<!--                                <button type="submit" disabled title="delete" class="clear">🅧</button>-->
                                 <div class="capslock">
                                     <p><strong>Caps Lock</strong>이 켜져 있습니다.</p>
                                 </div>
                             </div>
                         </div>
-                        <input type="submit" title="로그인" alt="로그인" value="로그인" class="login">
+                        <button type="submit">Login</button>
+<!--                        <input type="submit" title="로그인" alt="로그인" value="로그인" class="login">-->
                         
 <!--                    check_info 작업 예정-->
                         
@@ -51,6 +53,7 @@
                             <span class="check_box">
                                 <input type="checkbox" name="nvlong">
                                 <label for="login_check">로그인 상태 유지</label>
+                                <a href="/signup">회원가입</a>
                             </span>
                         </div>
                     </fieldset>
@@ -66,7 +69,8 @@
                     <span class="bar" aria-hidden="true">│</span>
                     <a target="_blank" id="pwinquiry" href="#">비밀번호 찾기</a>
                     <span class="bar" aria-hidden="true">│</span>
-                    <a target="_blank" id="join" href="./join.html">회원가입</a>
+                    <a target="_blank" id="join" href="/signup">회원가입</a>
+
                 </div>
             </div>
         </section>
