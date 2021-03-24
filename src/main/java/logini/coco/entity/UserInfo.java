@@ -8,11 +8,14 @@ import lombok.NoArgsConstructor;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
+import org.springframework.util.Assert;
 
 import javax.persistence.*;
 import java.util.Collection;
 import java.util.HashSet;
 import java.util.Set;
+
+import static org.springframework.util.Assert.hasText;
 
 @NoArgsConstructor(access = AccessLevel.PROTECTED)
 @Entity
@@ -35,6 +38,10 @@ public class UserInfo implements UserDetails {
 
     @Builder
     public UserInfo(String email, String password, String auth){
+        hasText(email, "email이 없습니다.");
+        hasText(password, "비밀번호가 없습니다.");
+        hasText(auth, "auth가 없습니다.");
+
         this.email =email;
         this.password = password;
         this.auth=auth;
