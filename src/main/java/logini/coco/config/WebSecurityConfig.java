@@ -26,14 +26,13 @@ public class WebSecurityConfig  extends WebSecurityConfigurerAdapter {
     protected void configure(HttpSecurity http) throws Exception {
         http
             .authorizeRequests()
-                .antMatchers("/login", "signup", "/user").permitAll()   //누구나
-                .antMatchers("/").hasRole("USER")
+                .antMatchers("/login", "signup", "/main").permitAll()   //누구나
                 .antMatchers("/admin").hasRole("ADMIN")
                 .anyRequest().authenticated() //나머지 요청은 권한이 있어야함
             .and()
                 .formLogin()
                     .loginPage("/login")
-                    .defaultSuccessUrl("/")
+                    .defaultSuccessUrl("/main") // 성공하면 다시 메인으로
             .and()
                 .logout()
                     .logoutSuccessUrl("/login")
