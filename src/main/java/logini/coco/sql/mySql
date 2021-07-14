@@ -1,0 +1,12 @@
+DROP SCHEMA `coconoon`;
+CREATE SCHEMA `coconoon` DEFAULT CHARACTER SET utf8 ;
+
+use coconoon;
+
+DROP TABLE IF EXISTS coMember;
+create table coMember(
+	code varchar(20) primary key,
+    email varchar(50) not null,
+    password varchar(20),
+    auth varchar(20)
+);
