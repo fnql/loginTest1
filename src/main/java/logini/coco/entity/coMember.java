@@ -17,7 +17,7 @@ import java.util.Set;
 @NoArgsConstructor(access = AccessLevel.PROTECTED)
 @Entity
 @Getter
-public class UserInfo implements UserDetails {
+public class coMember implements UserDetails {
 
     @Id
     @Column(name = "email")
@@ -40,7 +40,7 @@ public class UserInfo implements UserDetails {
     private String auth;
 
     @Builder
-    public UserInfo(String email,String name, String password, String addr, String hobby, String auth) {
+    public coMember(String email, String name, String password, String addr, String hobby, String auth) {
         this.email = email;
         this.password = password;
         this.name = name;

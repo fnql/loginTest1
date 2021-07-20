@@ -1,7 +1,7 @@
 package logini.coco.service;
 
 import logini.coco.dto.UserInfoDto;
-import logini.coco.entity.UserInfo;
+import logini.coco.entity.coMember;
 import logini.coco.repository.UserRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.security.core.userdetails.UserDetailsService;
@@ -16,7 +16,7 @@ public class UserService implements UserDetailsService {
     private final UserRepository userRepository;
 
     @Override
-    public UserInfo loadUserByUsername(String email) throws UsernameNotFoundException{
+    public coMember loadUserByUsername(String email) throws UsernameNotFoundException{
         return userRepository.findByEmail(email)
                 .orElseThrow(() -> new UsernameNotFoundException(email));
     }
@@ -26,7 +26,7 @@ public class UserService implements UserDetailsService {
         BCryptPasswordEncoder encoder = new BCryptPasswordEncoder();
         infoDto.setPassword(encoder.encode(infoDto.getPassword()));
 
-        return userRepository.save(UserInfo.builder()
+        return userRepository.save(coMember.builder()
             .email(infoDto.getEmail())
             .auth(infoDto.getAuth())
             .addr(infoDto.getAddr())

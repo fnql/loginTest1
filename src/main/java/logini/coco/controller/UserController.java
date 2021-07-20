@@ -14,18 +14,18 @@ import javax.servlet.http.HttpServletResponse;
 
 @RequiredArgsConstructor
 @Controller
-public class mvcController {
+public class UserController {
 
     private final UserService userService;
 
     @PostMapping("/main")
     public String signup(UserInfoDto infoDto){
         userService.save(infoDto);
-        return "redirect:/login";
+        return "redirect:/main";
     }
 
     @GetMapping(value = "/logout")
-    public String logoutPage(HttpServletRequest request, HttpServletResponse response){
+    public String logoutPage(HttpServletRequest request, HttpServletResponse response) {
         new SecurityContextLogoutHandler().logout(request, response, SecurityContextHolder.getContext().getAuthentication());
         return "redirect:/login";
     }
