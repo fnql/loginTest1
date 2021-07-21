@@ -21,7 +21,7 @@ public class UserController {
     @PostMapping("/main")
     public String signup(UserInfoDto infoDto){
         userService.save(infoDto);
-        return "redirect:/main";
+        return "redirect:/login";
     }
 
     @GetMapping(value = "/logout")
