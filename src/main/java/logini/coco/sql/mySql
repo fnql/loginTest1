@@ -7,7 +7,7 @@ DROP TABLE IF EXISTS co_member;
 create table co_member(
     email varchar(50) primary key not null,
     name varchar(20) unique key,
-    password varchar(20),
+    password varchar(255),
     auth varchar(20),
     hobby varchar(20),
     addr varchar(20)
@@ -16,3 +16,9 @@ create table co_member(
 insert into co_member values ("db","루비","1234", "admin", "게임", "고척동");
 
 select * from co_member;
+
+주소 api 승인키 : devU01TX0FVVEgyMDIxMDcwOTEwMjIxNzExMTM4ODA=
+
+// TODO: 2021-07-22 취미 어떻게 넣어야 잘 넣어다고 소문이 날까...
+//TODO: 이메일 본인 확인
+// TODO: 2021-07-22 닉네임 중복 검사

@@ -43,7 +43,8 @@ public class PasswordTests {
                 .hobby("game")
                 .build();
         assertThat(member.getUsername()).isEqualTo("dd");
-        System.out.println("member = " + member.getPassword());
+        String enPw = passwordEncoder.encode(member.getPassword());
+        System.out.println("enPw = " + enPw);
     }
 }
 

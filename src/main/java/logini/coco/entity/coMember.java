@@ -21,7 +21,6 @@ public class coMember implements UserDetails {
 
     @Id
     @Column(name = "email")
-    @GeneratedValue(strategy = GenerationType.IDENTITY) //DB가 자동생성
     private String email;
 
     @Column(name = "name", unique = true)
