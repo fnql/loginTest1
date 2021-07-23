@@ -8,28 +8,23 @@
 <h1>Sign Up</h1> <hr>
 
 <form th:action="@{/main}" method="POST">
-    email : <input type="text" name="email"> <br>
+    email : <input type="text" name="email"><br>
     password : <input type="password" name="password"> <br>
-    name : <input type="text" name="name"> <br>
+<!--닉네임 중복 검사-->
+    <form th:action="@{/name}" method="get">
+        name : <input type="text" name="name">
+        <button type="submit">중복 초복</button><br>
+    </form>
     addr :
     <input id="member_addr" type="text" name="addr" placeholder="Address" style="width: 200px" readonly onclick="findAddr()"> <br>
 
-<!--    <input type="text" name="hobby" list="bigHobbyList" ><br>-->
-<!--    <datalist id="bigHobbyList">-->
-<!--        <option value="" selected disabled hidden>택1</option>-->
-<!--        <option value="운동"></option>-->
-<!--        <option value="영화"></option>-->
-<!--        <option value="독서"></option>-->
-<!--        <option value="이야기"></option>-->
-<!--        <option value="여행"></option>-->
-<!--    </datalist>-->
     취미 :  <select name="hobby">
         <option value="운동">운동</option>
         <option value="독서">독서</option>
         <option value="영화">영화</option>
         <option value="여행">여행</option>
         <option value="이야기">이야기</option>
-    </select>
+    </select> <br>
     auth: <input type="radio" name="auth" value="ROLE_ADMIN,ROLE_USER"> admin
     <input type="radio" name="auth" value="ROLE_USER" checked="checked"> user <br>
     <button type="submit">Join</button>
