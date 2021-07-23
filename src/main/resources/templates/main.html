@@ -51,11 +51,13 @@
                 </li>
             </ul>
         </nav>
+        ryu jong wook song woogi jang won young choi
         <!-- GNB 메뉴 끝 -->
         <aside>
             <h2>회원 전용 페이지</h2>
             ID : <span sec:authentication="name"></span> <br>
             소유 권한 : <span sec:authentication="authorities"></span> <br>
+            <h3>안녕하세요! <span sec:authentication="principal.name"></span>님</h3>
             집 : <span sec:authentication="principal.addr"></span> <br>
 
             <form id="logout" action="/logout" method="POST">
