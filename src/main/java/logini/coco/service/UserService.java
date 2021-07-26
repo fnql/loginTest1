@@ -38,7 +38,12 @@ public class UserService implements UserDetailsService {
             .password(infoDto.getPassword()).build()).getEmail();
     }
 
-    public boolean loadByName(String name) {
-            return userRepository.existsByName(name);
+//    public boolean loadByName(String name) {
+//            return userRepository.existsByName(name);
+//    }
+
+    public int userIdCheck(String user_id) {
+        return userRepository.existsByName(user_id);
     }
+
 }
