@@ -3,14 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <title>sign up</title>
+    <link rel="stylesheet" href="./css/signup.css" type="text/css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 <body>
 <h1>Sign Up</h1> <hr>
 
 <form th:action="@{/main}" method="POST">
-    email : <input type="text" name="email"><br>
 
+    <div class="email_input_box" id="email_check_false" >
+
+        email : <input type="text" name="email" class="email_input" disabled = "disabled"><br>
+        <div>
+            <span>인증번호 전송</span>
+        </div>
+        <div class="clearfix"></div>
+    </div>
 
     password : <input type="password" name="password"> <br>
 
@@ -58,6 +66,15 @@
     }
 </script>
 <script>
+    $(".mail_check_button").click(function(){
+        var email = $(".email_input").val();        // 입력한 이메일
+
+        $.ajax({
+            type:"GET",
+            url:"mailCheck?email=" + email
+        });
+    });
+
     // 아이디 유효성 검사(1 = 중복 / 0 != 중복)
     $("#user_id").blur(function() {
         // id = "id_reg" / name = "userId"
@@ -89,7 +106,7 @@
 
                     } else {
 
-                        $('#id_check').text("아이디는 한글,소문자,숫자 2~10자리만 가능합니다 :) :)");
+                        $('#id_check').text("아이디는 한글,소문자,숫자 2~10자리만 가능합니다:)");
                         $('#id_check').css('color', 'red');
                         $("#reg_submit").attr("disabled", true);
                     }
