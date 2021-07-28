@@ -15,9 +15,12 @@ import org.springframework.web.bind.annotation.*;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import static logini.coco.service.MailService.*;
+
 @RequiredArgsConstructor
 @Controller
 public class UserController {
+
     private static final Logger logger = LogManager.getLogger(UserController.class);
 
     private final UserService userService;
@@ -35,6 +38,14 @@ public class UserController {
         return "redirect:/login";
     }
 
+    @RequestMapping(value = "/user/idCheck", method = RequestMethod.GET)
+    @ResponseBody
+    public int idCheck(@RequestParam("userId") String user_id) {
+
+        return userService.userIdCheck(user_id);
+    }
+
+    //이메일 인증
     @RequestMapping(value="/mailCheck", method=RequestMethod.GET)
     @ResponseBody
     public void mailCheckGET(String email) throws Exception{
