@@ -11,14 +11,18 @@
 
 <form th:action="@{/main}" method="POST">
 
-    <div class="email_input_box" id="email_check_false" >
-
-        email : <input type="text" name="email" class="email_input" disabled = "disabled"><br>
-        <div>
-            <span>인증번호 전송</span>
-        </div>
-        <div class="clearfix"></div>
+    <div class="email_input_box" >
+        email : <input type="text" name="email" class="email_input" ><br>
     </div>
+        <div class="email_check">
+            <div class = "email_check_input"  id="email_check_false">
+                <input class="email_check_input" disabled = "disabled">
+            </div>
+            <div class="email_check_button">
+                <span>인증번호 전송</span>
+            </div>
+            <div class="clearfix"></div>
+        </div>
 
     password : <input type="password" name="password"> <br>
 
