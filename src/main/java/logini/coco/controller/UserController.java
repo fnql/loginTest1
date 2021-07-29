@@ -15,6 +15,8 @@ import org.springframework.web.bind.annotation.*;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import java.util.Random;
+
 import static logini.coco.service.MailService.*;
 
 @RequiredArgsConstructor
@@ -41,17 +43,18 @@ public class UserController {
     @RequestMapping(value = "/user/idCheck", method = RequestMethod.GET)
     @ResponseBody
     public int idCheck(@RequestParam("userId") String user_id) {
-
         return userService.userIdCheck(user_id);
     }
 
     //이메일 인증
-    @RequestMapping(value="/mailCheck", method=RequestMethod.GET)
+    @RequestMapping(value = "/mailCheck", method = RequestMethod.GET)
     @ResponseBody
-    public void mailCheckGET(String email) throws Exception{
-
+    public void mailCheckGET(@RequestParam("eMail") String email) {
         /* 뷰(View)로부터 넘어온 데이터 확인 */
         logger.info("이메일 데이터 전송 확인");
         logger.info("인증번호 : " + email);
+
+        Random random = new Random();
+        int checkNum = random.nextInt(888888) + 111111;
     }
 }
