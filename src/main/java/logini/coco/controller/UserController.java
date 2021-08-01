@@ -55,4 +55,9 @@ public class UserController {
         logger.info("인증번호 : " + email);
 
     }
+
+//    @GetMapping(value = "/menu")
+//    public String testPage(){
+//        return "redirect:/menu";
+//    }
 }

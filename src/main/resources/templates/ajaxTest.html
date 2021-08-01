@@ -1,0 +1,53 @@
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="#">
+    <style>
+        div {
+            width: 200px;
+            height: 80px;
+            margin: 3px;
+            float: left;
+        }
+    </style>
+    <script
+            src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $("#menu1").click(function() {
+                $.ajax({
+                    url : '/menu',
+                    success : function(result) {
+                        $("#message1").html(result); },
+                    error : function(){ alert("로딩실패!"); }
+                });
+            });
+        });
+        $(document).ready(function() {
+            $("#menu2").click(function() {
+                $.ajax({
+                    url : "/menu",
+                    success : function(result) {
+                        var refine = $("#message2").html(result).find('li');
+                        console.log(result);
+                        console.log(refine);
+                        console.log(typeof(refine));
+                        $('#message2').html(refine);
+                    }
+                });
+            });
+        });
+    </script>
+</head>
+<body>
+<div>
+    <a href="#" id="menu1">메뉴 보기 1</a>
+    <p>
+        <span id="message1"></span>
+</div>
+<div>
+    <a href="#" id="menu2">메뉴 보기 2</a>
+    <p>
+        <span id="message2"></span>
+</div>
+</body>
+</html>
