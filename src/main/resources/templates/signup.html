@@ -76,7 +76,7 @@
     $(".email_check_button").click(function(){
         var email = $('.email_input').val();        // 입력한 이메일
         $.ajax({
-            url:"mailCheck?email=" + email,
+            url:"/mailCheck?email=" + email,
             type : 'get'
         });
     });
@@ -87,7 +87,7 @@
         var user_id = $('#user_id').val();
         var idJ = /^[a-z0-9가-힣]{2,10}$/;
         $.ajax({
-            url : '${pageContext.request.contextPath}/signup/idCheck?userId='+ user_id,
+            url : '/user/idCheck?userId='+ user_id,
             type : 'get',
             success : function(data) {
                 console.log("1 = 중복o / 0 = 중복x : "+ data);

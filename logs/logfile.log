@@ -2912,3 +2912,978 @@ Caused by: org.hibernate.HibernateException: Access to DialectResolutionInfo can
 [INFO ] 2021-07-31 21:54:38.473 [http-nio-8080-exec-1] [/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
 [INFO ] 2021-07-31 21:54:38.473 [http-nio-8080-exec-1] DispatcherServlet - Initializing Servlet 'dispatcherServlet'
 [INFO ] 2021-07-31 21:54:38.474 [http-nio-8080-exec-1] DispatcherServlet - Completed initialization in 1 ms
+[INFO ] 2021-07-31 22:05:59.125 [background-preinit] Version - HV000001: Hibernate Validator 6.1.7.Final
+[INFO ] 2021-07-31 22:05:59.179 [restartedMain] CocoApplication - Starting CocoApplication using Java 1.8.0_251 on woogi with PID 6956 (D:\down\IntelliJ\loginTest1\build\classes\java\main started by tkddn in D:\down\IntelliJ\loginTest1)
+[INFO ] 2021-07-31 22:05:59.187 [restartedMain] CocoApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2021-07-31 22:05:59.221 [restartedMain] DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[INFO ] 2021-07-31 22:05:59.222 [restartedMain] DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[INFO ] 2021-07-31 22:05:59.763 [restartedMain] RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[INFO ] 2021-07-31 22:05:59.806 [restartedMain] RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 36 ms. Found 1 JPA repository interfaces.
+[INFO ] 2021-07-31 22:06:00.278 [restartedMain] TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+[INFO ] 2021-07-31 22:06:00.286 [restartedMain] Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+[INFO ] 2021-07-31 22:06:00.287 [restartedMain] StandardService - Starting service [Tomcat]
+[INFO ] 2021-07-31 22:06:00.287 [restartedMain] StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.43]
+[INFO ] 2021-07-31 22:06:00.407 [restartedMain] [/] - Initializing Spring embedded WebApplicationContext
+[INFO ] 2021-07-31 22:06:00.408 [restartedMain] ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1185 ms
+[INFO ] 2021-07-31 22:06:00.496 [restartedMain] HikariDataSource - HikariPool-1 - Starting...
+[INFO ] 2021-07-31 22:06:00.623 [restartedMain] HikariDataSource - HikariPool-1 - Start completed.
+[INFO ] 2021-07-31 22:06:00.654 [restartedMain] LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+[INFO ] 2021-07-31 22:06:00.688 [restartedMain] Version - HHH000412: Hibernate ORM core version 5.4.28.Final
+[INFO ] 2021-07-31 22:06:00.794 [restartedMain] Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[INFO ] 2021-07-31 22:06:00.882 [restartedMain] Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+[INFO ] 2021-07-31 22:06:01.279 [restartedMain] JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[INFO ] 2021-07-31 22:06:01.287 [restartedMain] LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[WARN ] 2021-07-31 22:06:01.548 [restartedMain] JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[INFO ] 2021-07-31 22:06:01.653 [restartedMain] DefaultSecurityFilterChain - Will secure Ant [pattern='/css/**'] with []
+[INFO ] 2021-07-31 22:06:01.653 [restartedMain] DefaultSecurityFilterChain - Will secure Ant [pattern='/js/**'] with []
+[INFO ] 2021-07-31 22:06:01.654 [restartedMain] DefaultSecurityFilterChain - Will secure Ant [pattern='/img/**'] with []
+[INFO ] 2021-07-31 22:06:01.678 [restartedMain] DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5481c226, org.springframework.security.web.context.SecurityContextPersistenceFilter@16275b08, org.springframework.security.web.header.HeaderWriterFilter@4b78b54b, org.springframework.security.web.csrf.CsrfFilter@7f4e3ef3, org.springframework.security.web.authentication.logout.LogoutFilter@2eee803a, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@f0322fe, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@75b4e385, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@379d73ff, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@db1eb97, org.springframework.security.web.session.SessionManagementFilter@76d0f638, org.springframework.security.web.access.ExceptionTranslationFilter@4db88383, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@73ecaea0]
+[INFO ] 2021-07-31 22:06:01.759 [restartedMain] ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+[INFO ] 2021-07-31 22:06:01.924 [restartedMain] OptionalLiveReloadServer - LiveReload server is running on port 35729
+[INFO ] 2021-07-31 22:06:01.936 [restartedMain] Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+[INFO ] 2021-07-31 22:06:01.952 [restartedMain] TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+[INFO ] 2021-07-31 22:06:01.960 [restartedMain] CocoApplication - Started CocoApplication in 3.074 seconds (JVM running for 4.181)
+[INFO ] 2021-07-31 22:06:09.116 [http-nio-8080-exec-1] [/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[INFO ] 2021-07-31 22:06:09.116 [http-nio-8080-exec-1] DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[INFO ] 2021-07-31 22:06:09.117 [http-nio-8080-exec-1] DispatcherServlet - Completed initialization in 1 ms
+[INFO ] 2021-08-01 11:30:04.403 [background-preinit] Version - HV000001: Hibernate Validator 6.1.7.Final
+[INFO ] 2021-08-01 11:30:04.461 [restartedMain] CocoApplication - Starting CocoApplication using Java 1.8.0_251 on woogi with PID 12784 (D:\down\IntelliJ\loginTest1\build\classes\java\main started by tkddn in D:\down\IntelliJ\loginTest1)
+[INFO ] 2021-08-01 11:30:04.470 [restartedMain] CocoApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2021-08-01 11:30:04.509 [restartedMain] DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[INFO ] 2021-08-01 11:30:04.509 [restartedMain] DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[INFO ] 2021-08-01 11:30:05.077 [restartedMain] RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[INFO ] 2021-08-01 11:30:05.119 [restartedMain] RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 35 ms. Found 1 JPA repository interfaces.
+[INFO ] 2021-08-01 11:30:05.608 [restartedMain] TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+[INFO ] 2021-08-01 11:30:05.617 [restartedMain] Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+[INFO ] 2021-08-01 11:30:05.617 [restartedMain] StandardService - Starting service [Tomcat]
+[INFO ] 2021-08-01 11:30:05.618 [restartedMain] StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.43]
+[INFO ] 2021-08-01 11:30:05.743 [restartedMain] [/] - Initializing Spring embedded WebApplicationContext
+[INFO ] 2021-08-01 11:30:05.744 [restartedMain] ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1234 ms
+[INFO ] 2021-08-01 11:30:05.838 [restartedMain] HikariDataSource - HikariPool-1 - Starting...
+[INFO ] 2021-08-01 11:30:06.047 [restartedMain] HikariDataSource - HikariPool-1 - Start completed.
+[INFO ] 2021-08-01 11:30:06.081 [restartedMain] LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+[INFO ] 2021-08-01 11:30:06.116 [restartedMain] Version - HHH000412: Hibernate ORM core version 5.4.28.Final
+[INFO ] 2021-08-01 11:30:06.219 [restartedMain] Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[INFO ] 2021-08-01 11:30:06.306 [restartedMain] Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+[INFO ] 2021-08-01 11:30:06.836 [restartedMain] JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[INFO ] 2021-08-01 11:30:06.845 [restartedMain] LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[WARN ] 2021-08-01 11:30:07.164 [restartedMain] JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[INFO ] 2021-08-01 11:30:07.294 [restartedMain] DefaultSecurityFilterChain - Will secure Ant [pattern='/css/**'] with []
+[INFO ] 2021-08-01 11:30:07.295 [restartedMain] DefaultSecurityFilterChain - Will secure Ant [pattern='/js/**'] with []
+[INFO ] 2021-08-01 11:30:07.295 [restartedMain] DefaultSecurityFilterChain - Will secure Ant [pattern='/img/**'] with []
+[INFO ] 2021-08-01 11:30:07.324 [restartedMain] DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@37fa1e12, org.springframework.security.web.context.SecurityContextPersistenceFilter@13e82124, org.springframework.security.web.header.HeaderWriterFilter@64a29166, org.springframework.security.web.csrf.CsrfFilter@1572c393, org.springframework.security.web.authentication.logout.LogoutFilter@3d5efbc8, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@6432f05a, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@61617248, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@50d002b, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5a05a28, org.springframework.security.web.session.SessionManagementFilter@aabf29b, org.springframework.security.web.access.ExceptionTranslationFilter@64f5f893, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@4c4aebd9]
+[INFO ] 2021-08-01 11:30:07.420 [restartedMain] ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+[INFO ] 2021-08-01 11:30:07.626 [restartedMain] OptionalLiveReloadServer - LiveReload server is running on port 35729
+[INFO ] 2021-08-01 11:30:07.640 [restartedMain] Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+[INFO ] 2021-08-01 11:30:07.657 [restartedMain] TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+[INFO ] 2021-08-01 11:30:07.664 [restartedMain] CocoApplication - Started CocoApplication in 3.538 seconds (JVM running for 4.753)
+[INFO ] 2021-08-01 11:30:36.753 [http-nio-8080-exec-1] [/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[INFO ] 2021-08-01 11:30:36.753 [http-nio-8080-exec-1] DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[INFO ] 2021-08-01 11:30:36.754 [http-nio-8080-exec-1] DispatcherServlet - Completed initialization in 1 ms
+[INFO ] 2021-08-01 11:35:47.061 [background-preinit] Version - HV000001: Hibernate Validator 6.1.7.Final
+[INFO ] 2021-08-01 11:35:47.090 [restartedMain] CocoApplication - Starting CocoApplication using Java 1.8.0_251 on woogi with PID 19660 (D:\down\IntelliJ\loginTest1\build\classes\java\main started by tkddn in D:\down\IntelliJ\loginTest1)
+[INFO ] 2021-08-01 11:35:47.098 [restartedMain] CocoApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2021-08-01 11:35:47.167 [restartedMain] DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[INFO ] 2021-08-01 11:35:47.167 [restartedMain] DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[INFO ] 2021-08-01 11:35:47.705 [restartedMain] RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[INFO ] 2021-08-01 11:35:47.755 [restartedMain] RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 42 ms. Found 1 JPA repository interfaces.
+[INFO ] 2021-08-01 11:35:48.255 [restartedMain] TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+[INFO ] 2021-08-01 11:35:48.267 [restartedMain] Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+[INFO ] 2021-08-01 11:35:48.268 [restartedMain] StandardService - Starting service [Tomcat]
+[INFO ] 2021-08-01 11:35:48.268 [restartedMain] StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.43]
+[INFO ] 2021-08-01 11:35:48.481 [restartedMain] [/] - Initializing Spring embedded WebApplicationContext
+[INFO ] 2021-08-01 11:35:48.481 [restartedMain] ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1313 ms
+[INFO ] 2021-08-01 11:35:48.586 [restartedMain] HikariDataSource - HikariPool-1 - Starting...
+[INFO ] 2021-08-01 11:35:48.708 [restartedMain] HikariDataSource - HikariPool-1 - Start completed.
+[INFO ] 2021-08-01 11:35:48.740 [restartedMain] LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+[INFO ] 2021-08-01 11:35:48.776 [restartedMain] Version - HHH000412: Hibernate ORM core version 5.4.28.Final
+[INFO ] 2021-08-01 11:35:48.877 [restartedMain] Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[INFO ] 2021-08-01 11:35:48.965 [restartedMain] Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+[INFO ] 2021-08-01 11:35:49.390 [restartedMain] JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[INFO ] 2021-08-01 11:35:49.399 [restartedMain] LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[WARN ] 2021-08-01 11:35:49.675 [restartedMain] JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[INFO ] 2021-08-01 11:35:49.776 [restartedMain] DefaultSecurityFilterChain - Will secure Ant [pattern='/css/**'] with []
+[INFO ] 2021-08-01 11:35:49.777 [restartedMain] DefaultSecurityFilterChain - Will secure Ant [pattern='/js/**'] with []
+[INFO ] 2021-08-01 11:35:49.777 [restartedMain] DefaultSecurityFilterChain - Will secure Ant [pattern='/img/**'] with []
+[INFO ] 2021-08-01 11:35:49.778 [restartedMain] DefaultSecurityFilterChain - Will secure Ant [pattern='/templates/menu.html'] with []
+[INFO ] 2021-08-01 11:35:49.801 [restartedMain] DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7c912260, org.springframework.security.web.context.SecurityContextPersistenceFilter@64a29166, org.springframework.security.web.header.HeaderWriterFilter@64f5f893, org.springframework.security.web.csrf.CsrfFilter@2d1d03fe, org.springframework.security.web.authentication.logout.LogoutFilter@3c8eafd4, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@29473e0b, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@aabf29b, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@402e869d, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6c7bd26f, org.springframework.security.web.session.SessionManagementFilter@1c438bb9, org.springframework.security.web.access.ExceptionTranslationFilter@b6aa809, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@1e70d104]
+[INFO ] 2021-08-01 11:35:49.879 [restartedMain] ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+[INFO ] 2021-08-01 11:35:50.042 [restartedMain] OptionalLiveReloadServer - LiveReload server is running on port 35729
+[INFO ] 2021-08-01 11:35:50.054 [restartedMain] Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+[INFO ] 2021-08-01 11:35:50.070 [restartedMain] TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+[INFO ] 2021-08-01 11:35:50.077 [restartedMain] CocoApplication - Started CocoApplication in 3.254 seconds (JVM running for 4.406)
+[INFO ] 2021-08-01 11:35:52.162 [http-nio-8080-exec-1] [/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[INFO ] 2021-08-01 11:35:52.163 [http-nio-8080-exec-1] DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[INFO ] 2021-08-01 11:35:52.164 [http-nio-8080-exec-1] DispatcherServlet - Completed initialization in 1 ms
+[INFO ] 2021-08-01 11:37:32.480 [background-preinit] Version - HV000001: Hibernate Validator 6.1.7.Final
+[INFO ] 2021-08-01 11:37:32.532 [restartedMain] CocoApplication - Starting CocoApplication using Java 1.8.0_251 on woogi with PID 18616 (D:\down\IntelliJ\loginTest1\build\classes\java\main started by tkddn in D:\down\IntelliJ\loginTest1)
+[INFO ] 2021-08-01 11:37:32.540 [restartedMain] CocoApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2021-08-01 11:37:32.575 [restartedMain] DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[INFO ] 2021-08-01 11:37:32.575 [restartedMain] DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[INFO ] 2021-08-01 11:37:33.100 [restartedMain] RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[INFO ] 2021-08-01 11:37:33.142 [restartedMain] RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 36 ms. Found 1 JPA repository interfaces.
+[INFO ] 2021-08-01 11:37:33.610 [restartedMain] TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+[INFO ] 2021-08-01 11:37:33.619 [restartedMain] Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+[INFO ] 2021-08-01 11:37:33.619 [restartedMain] StandardService - Starting service [Tomcat]
+[INFO ] 2021-08-01 11:37:33.620 [restartedMain] StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.43]
+[INFO ] 2021-08-01 11:37:33.741 [restartedMain] [/] - Initializing Spring embedded WebApplicationContext
+[INFO ] 2021-08-01 11:37:33.741 [restartedMain] ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1165 ms
+[INFO ] 2021-08-01 11:37:33.832 [restartedMain] HikariDataSource - HikariPool-1 - Starting...
+[INFO ] 2021-08-01 11:37:33.953 [restartedMain] HikariDataSource - HikariPool-1 - Start completed.
+[INFO ] 2021-08-01 11:37:33.985 [restartedMain] LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+[INFO ] 2021-08-01 11:37:34.026 [restartedMain] Version - HHH000412: Hibernate ORM core version 5.4.28.Final
+[INFO ] 2021-08-01 11:37:34.134 [restartedMain] Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[INFO ] 2021-08-01 11:37:34.227 [restartedMain] Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+[INFO ] 2021-08-01 11:37:34.630 [restartedMain] JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[INFO ] 2021-08-01 11:37:34.638 [restartedMain] LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[WARN ] 2021-08-01 11:37:34.911 [restartedMain] JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[INFO ] 2021-08-01 11:37:35.034 [restartedMain] DefaultSecurityFilterChain - Will secure Ant [pattern='/css/**'] with []
+[INFO ] 2021-08-01 11:37:35.034 [restartedMain] DefaultSecurityFilterChain - Will secure Ant [pattern='/js/**'] with []
+[INFO ] 2021-08-01 11:37:35.034 [restartedMain] DefaultSecurityFilterChain - Will secure Ant [pattern='/img/**'] with []
+[INFO ] 2021-08-01 11:37:35.036 [restartedMain] DefaultSecurityFilterChain - Will secure Ant [pattern='/templates/menu.html'] with []
+[INFO ] 2021-08-01 11:37:35.061 [restartedMain] DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@71ef19be, org.springframework.security.web.context.SecurityContextPersistenceFilter@43b4cfd1, org.springframework.security.web.header.HeaderWriterFilter@1353aba0, org.springframework.security.web.csrf.CsrfFilter@57e8b5f, org.springframework.security.web.authentication.logout.LogoutFilter@14fb4a79, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@3422db43, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4ec0078, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@53a1e489, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@179f38e9, org.springframework.security.web.session.SessionManagementFilter@6f99907c, org.springframework.security.web.access.ExceptionTranslationFilter@32031f25, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@7a9a3ca6]
+[INFO ] 2021-08-01 11:37:35.146 [restartedMain] ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+[INFO ] 2021-08-01 11:37:35.321 [restartedMain] OptionalLiveReloadServer - LiveReload server is running on port 35729
+[INFO ] 2021-08-01 11:37:35.334 [restartedMain] Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+[INFO ] 2021-08-01 11:37:35.350 [restartedMain] TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+[INFO ] 2021-08-01 11:37:35.359 [restartedMain] CocoApplication - Started CocoApplication in 3.116 seconds (JVM running for 4.242)
+[INFO ] 2021-08-01 11:37:38.210 [http-nio-8080-exec-1] [/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[INFO ] 2021-08-01 11:37:38.210 [http-nio-8080-exec-1] DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[INFO ] 2021-08-01 11:37:38.211 [http-nio-8080-exec-1] DispatcherServlet - Completed initialization in 0 ms
+[INFO ] 2021-08-01 11:40:14.703 [background-preinit] Version - HV000001: Hibernate Validator 6.1.7.Final
+[INFO ] 2021-08-01 11:40:14.754 [restartedMain] CocoApplication - Starting CocoApplication using Java 1.8.0_251 on woogi with PID 19376 (D:\down\IntelliJ\loginTest1\build\classes\java\main started by tkddn in D:\down\IntelliJ\loginTest1)
+[INFO ] 2021-08-01 11:40:14.762 [restartedMain] CocoApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2021-08-01 11:40:14.795 [restartedMain] DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[INFO ] 2021-08-01 11:40:14.795 [restartedMain] DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[INFO ] 2021-08-01 11:40:15.323 [restartedMain] RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[INFO ] 2021-08-01 11:40:15.366 [restartedMain] RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 36 ms. Found 1 JPA repository interfaces.
+[INFO ] 2021-08-01 11:40:15.836 [restartedMain] TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+[INFO ] 2021-08-01 11:40:15.845 [restartedMain] Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+[INFO ] 2021-08-01 11:40:15.845 [restartedMain] StandardService - Starting service [Tomcat]
+[INFO ] 2021-08-01 11:40:15.845 [restartedMain] StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.43]
+[INFO ] 2021-08-01 11:40:15.966 [restartedMain] [/] - Initializing Spring embedded WebApplicationContext
+[INFO ] 2021-08-01 11:40:15.966 [restartedMain] ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1170 ms
+[INFO ] 2021-08-01 11:40:16.055 [restartedMain] HikariDataSource - HikariPool-1 - Starting...
+[INFO ] 2021-08-01 11:40:16.176 [restartedMain] HikariDataSource - HikariPool-1 - Start completed.
+[INFO ] 2021-08-01 11:40:16.208 [restartedMain] LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+[INFO ] 2021-08-01 11:40:16.243 [restartedMain] Version - HHH000412: Hibernate ORM core version 5.4.28.Final
+[INFO ] 2021-08-01 11:40:16.352 [restartedMain] Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[INFO ] 2021-08-01 11:40:16.438 [restartedMain] Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+[INFO ] 2021-08-01 11:40:16.844 [restartedMain] JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[INFO ] 2021-08-01 11:40:16.853 [restartedMain] LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[WARN ] 2021-08-01 11:40:17.104 [restartedMain] JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[INFO ] 2021-08-01 11:40:17.220 [restartedMain] DefaultSecurityFilterChain - Will secure Ant [pattern='/css/**'] with []
+[INFO ] 2021-08-01 11:40:17.220 [restartedMain] DefaultSecurityFilterChain - Will secure Ant [pattern='/js/**'] with []
+[INFO ] 2021-08-01 11:40:17.220 [restartedMain] DefaultSecurityFilterChain - Will secure Ant [pattern='/img/**'] with []
+[INFO ] 2021-08-01 11:40:17.222 [restartedMain] DefaultSecurityFilterChain - Will secure Ant [pattern='/templates/menu.html'] with []
+[INFO ] 2021-08-01 11:40:17.246 [restartedMain] DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7d53f5a8, org.springframework.security.web.context.SecurityContextPersistenceFilter@37204f6e, org.springframework.security.web.header.HeaderWriterFilter@76e9219c, org.springframework.security.web.csrf.CsrfFilter@6804f31a, org.springframework.security.web.authentication.logout.LogoutFilter@7bc78050, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@4cf3aab0, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@575a342f, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3990dab1, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2c38acc7, org.springframework.security.web.session.SessionManagementFilter@41d0fc97, org.springframework.security.web.access.ExceptionTranslationFilter@5205b362, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@507fcd42]
+[INFO ] 2021-08-01 11:40:17.328 [restartedMain] ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+[INFO ] 2021-08-01 11:40:17.502 [restartedMain] OptionalLiveReloadServer - LiveReload server is running on port 35729
+[INFO ] 2021-08-01 11:40:17.515 [restartedMain] Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+[INFO ] 2021-08-01 11:40:17.531 [restartedMain] TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+[INFO ] 2021-08-01 11:40:17.539 [restartedMain] CocoApplication - Started CocoApplication in 3.075 seconds (JVM running for 4.198)
+[INFO ] 2021-08-01 11:40:20.905 [http-nio-8080-exec-1] [/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[INFO ] 2021-08-01 11:40:20.906 [http-nio-8080-exec-1] DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[INFO ] 2021-08-01 11:40:20.906 [http-nio-8080-exec-1] DispatcherServlet - Completed initialization in 0 ms
+[INFO ] 2021-08-01 11:47:27.379 [background-preinit] Version - HV000001: Hibernate Validator 6.1.7.Final
+[INFO ] 2021-08-01 11:47:27.437 [restartedMain] CocoApplication - Starting CocoApplication using Java 1.8.0_251 on woogi with PID 21364 (D:\down\IntelliJ\loginTest1\build\classes\java\main started by tkddn in D:\down\IntelliJ\loginTest1)
+[INFO ] 2021-08-01 11:47:27.445 [restartedMain] CocoApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2021-08-01 11:47:27.478 [restartedMain] DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[INFO ] 2021-08-01 11:47:27.478 [restartedMain] DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[INFO ] 2021-08-01 11:47:28.008 [restartedMain] RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[INFO ] 2021-08-01 11:47:28.050 [restartedMain] RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 36 ms. Found 1 JPA repository interfaces.
+[INFO ] 2021-08-01 11:47:28.543 [restartedMain] TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+[INFO ] 2021-08-01 11:47:28.552 [restartedMain] Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+[INFO ] 2021-08-01 11:47:28.553 [restartedMain] StandardService - Starting service [Tomcat]
+[INFO ] 2021-08-01 11:47:28.553 [restartedMain] StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.43]
+[INFO ] 2021-08-01 11:47:28.674 [restartedMain] [/] - Initializing Spring embedded WebApplicationContext
+[INFO ] 2021-08-01 11:47:28.674 [restartedMain] ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1195 ms
+[INFO ] 2021-08-01 11:47:28.764 [restartedMain] HikariDataSource - HikariPool-1 - Starting...
+[INFO ] 2021-08-01 11:47:28.883 [restartedMain] HikariDataSource - HikariPool-1 - Start completed.
+[INFO ] 2021-08-01 11:47:28.915 [restartedMain] LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+[INFO ] 2021-08-01 11:47:28.951 [restartedMain] Version - HHH000412: Hibernate ORM core version 5.4.28.Final
+[INFO ] 2021-08-01 11:47:29.054 [restartedMain] Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[INFO ] 2021-08-01 11:47:29.142 [restartedMain] Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+[INFO ] 2021-08-01 11:47:29.542 [restartedMain] JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[INFO ] 2021-08-01 11:47:29.551 [restartedMain] LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[WARN ] 2021-08-01 11:47:29.824 [restartedMain] JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[INFO ] 2021-08-01 11:47:29.946 [restartedMain] DefaultSecurityFilterChain - Will secure Ant [pattern='/css/**'] with []
+[INFO ] 2021-08-01 11:47:29.946 [restartedMain] DefaultSecurityFilterChain - Will secure Ant [pattern='/js/**'] with []
+[INFO ] 2021-08-01 11:47:29.947 [restartedMain] DefaultSecurityFilterChain - Will secure Ant [pattern='/img/**'] with []
+[INFO ] 2021-08-01 11:47:29.948 [restartedMain] DefaultSecurityFilterChain - Will secure Ant [pattern='/templates/menu.html'] with []
+[INFO ] 2021-08-01 11:47:29.978 [restartedMain] DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5f4d5e70, org.springframework.security.web.context.SecurityContextPersistenceFilter@30790488, org.springframework.security.web.header.HeaderWriterFilter@caa1f62, org.springframework.security.web.csrf.CsrfFilter@accde72, org.springframework.security.web.authentication.logout.LogoutFilter@33f0ff3, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@56a4cab7, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@fb49a49, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@38920f7e, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3adb551c, org.springframework.security.web.session.SessionManagementFilter@6a09ed59, org.springframework.security.web.access.ExceptionTranslationFilter@87a7a3c, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@74ad4ca4]
+[INFO ] 2021-08-01 11:47:30.065 [restartedMain] ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+[INFO ] 2021-08-01 11:47:30.229 [restartedMain] OptionalLiveReloadServer - LiveReload server is running on port 35729
+[INFO ] 2021-08-01 11:47:30.243 [restartedMain] Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+[INFO ] 2021-08-01 11:47:30.259 [restartedMain] TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+[INFO ] 2021-08-01 11:47:30.266 [restartedMain] CocoApplication - Started CocoApplication in 3.147 seconds (JVM running for 4.239)
+[INFO ] 2021-08-01 11:47:33.164 [http-nio-8080-exec-1] [/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[INFO ] 2021-08-01 11:47:33.164 [http-nio-8080-exec-1] DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[INFO ] 2021-08-01 11:47:33.164 [http-nio-8080-exec-1] DispatcherServlet - Completed initialization in 0 ms
+[INFO ] 2021-08-01 11:49:01.642 [background-preinit] Version - HV000001: Hibernate Validator 6.1.7.Final
+[INFO ] 2021-08-01 11:49:01.695 [restartedMain] CocoApplication - Starting CocoApplication using Java 1.8.0_251 on woogi with PID 20008 (D:\down\IntelliJ\loginTest1\build\classes\java\main started by tkddn in D:\down\IntelliJ\loginTest1)
+[INFO ] 2021-08-01 11:49:01.702 [restartedMain] CocoApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2021-08-01 11:49:01.735 [restartedMain] DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[INFO ] 2021-08-01 11:49:01.736 [restartedMain] DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[INFO ] 2021-08-01 11:49:02.270 [restartedMain] RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[INFO ] 2021-08-01 11:49:02.312 [restartedMain] RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 35 ms. Found 1 JPA repository interfaces.
+[INFO ] 2021-08-01 11:49:02.785 [restartedMain] TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+[INFO ] 2021-08-01 11:49:02.793 [restartedMain] Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+[INFO ] 2021-08-01 11:49:02.794 [restartedMain] StandardService - Starting service [Tomcat]
+[INFO ] 2021-08-01 11:49:02.794 [restartedMain] StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.43]
+[INFO ] 2021-08-01 11:49:02.915 [restartedMain] [/] - Initializing Spring embedded WebApplicationContext
+[INFO ] 2021-08-01 11:49:02.915 [restartedMain] ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1178 ms
+[INFO ] 2021-08-01 11:49:03.007 [restartedMain] HikariDataSource - HikariPool-1 - Starting...
+[INFO ] 2021-08-01 11:49:03.149 [restartedMain] HikariDataSource - HikariPool-1 - Start completed.
+[INFO ] 2021-08-01 11:49:03.181 [restartedMain] LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+[INFO ] 2021-08-01 11:49:03.216 [restartedMain] Version - HHH000412: Hibernate ORM core version 5.4.28.Final
+[INFO ] 2021-08-01 11:49:03.324 [restartedMain] Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[INFO ] 2021-08-01 11:49:03.410 [restartedMain] Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+[INFO ] 2021-08-01 11:49:03.803 [restartedMain] JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[INFO ] 2021-08-01 11:49:03.812 [restartedMain] LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[WARN ] 2021-08-01 11:49:04.063 [restartedMain] JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[INFO ] 2021-08-01 11:49:04.176 [restartedMain] DefaultSecurityFilterChain - Will secure Ant [pattern='/css/**'] with []
+[INFO ] 2021-08-01 11:49:04.176 [restartedMain] DefaultSecurityFilterChain - Will secure Ant [pattern='/js/**'] with []
+[INFO ] 2021-08-01 11:49:04.176 [restartedMain] DefaultSecurityFilterChain - Will secure Ant [pattern='/img/**'] with []
+[INFO ] 2021-08-01 11:49:04.178 [restartedMain] DefaultSecurityFilterChain - Will secure Ant [pattern='/templates/menu.html'] with []
+[INFO ] 2021-08-01 11:49:04.202 [restartedMain] DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@c5267fd, org.springframework.security.web.context.SecurityContextPersistenceFilter@2f5898ff, org.springframework.security.web.header.HeaderWriterFilter@274562fb, org.springframework.security.web.csrf.CsrfFilter@384d4750, org.springframework.security.web.authentication.logout.LogoutFilter@4372e799, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@718b6feb, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@45057492, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@152ac257, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@579396ad, org.springframework.security.web.session.SessionManagementFilter@7295c8ea, org.springframework.security.web.access.ExceptionTranslationFilter@528ad68, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@490e6cf9]
+[INFO ] 2021-08-01 11:49:04.285 [restartedMain] ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+[INFO ] 2021-08-01 11:49:04.448 [restartedMain] OptionalLiveReloadServer - LiveReload server is running on port 35729
+[INFO ] 2021-08-01 11:49:04.461 [restartedMain] Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+[INFO ] 2021-08-01 11:49:04.477 [restartedMain] TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+[INFO ] 2021-08-01 11:49:04.484 [restartedMain] CocoApplication - Started CocoApplication in 3.1 seconds (JVM running for 4.221)
+[INFO ] 2021-08-01 11:53:53.549 [http-nio-8080-exec-1] [/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[INFO ] 2021-08-01 11:53:53.550 [http-nio-8080-exec-1] DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[INFO ] 2021-08-01 11:53:53.551 [http-nio-8080-exec-1] DispatcherServlet - Completed initialization in 1 ms
+[INFO ] 2021-08-01 11:54:34.490 [background-preinit] Version - HV000001: Hibernate Validator 6.1.7.Final
+[INFO ] 2021-08-01 11:54:34.549 [restartedMain] CocoApplication - Starting CocoApplication using Java 1.8.0_251 on woogi with PID 19504 (D:\down\IntelliJ\loginTest1\build\classes\java\main started by tkddn in D:\down\IntelliJ\loginTest1)
+[INFO ] 2021-08-01 11:54:34.557 [restartedMain] CocoApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2021-08-01 11:54:34.590 [restartedMain] DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[INFO ] 2021-08-01 11:54:34.590 [restartedMain] DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[INFO ] 2021-08-01 11:54:35.128 [restartedMain] RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[INFO ] 2021-08-01 11:54:35.172 [restartedMain] RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 37 ms. Found 1 JPA repository interfaces.
+[INFO ] 2021-08-01 11:54:35.638 [restartedMain] TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+[INFO ] 2021-08-01 11:54:35.646 [restartedMain] Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+[INFO ] 2021-08-01 11:54:35.647 [restartedMain] StandardService - Starting service [Tomcat]
+[INFO ] 2021-08-01 11:54:35.647 [restartedMain] StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.43]
+[INFO ] 2021-08-01 11:54:35.809 [restartedMain] [/] - Initializing Spring embedded WebApplicationContext
+[INFO ] 2021-08-01 11:54:35.810 [restartedMain] ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1219 ms
+[INFO ] 2021-08-01 11:54:35.904 [restartedMain] HikariDataSource - HikariPool-1 - Starting...
+[INFO ] 2021-08-01 11:54:36.023 [restartedMain] HikariDataSource - HikariPool-1 - Start completed.
+[INFO ] 2021-08-01 11:54:36.054 [restartedMain] LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+[INFO ] 2021-08-01 11:54:36.089 [restartedMain] Version - HHH000412: Hibernate ORM core version 5.4.28.Final
+[INFO ] 2021-08-01 11:54:36.186 [restartedMain] Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[INFO ] 2021-08-01 11:54:36.274 [restartedMain] Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+[INFO ] 2021-08-01 11:54:36.704 [restartedMain] JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[INFO ] 2021-08-01 11:54:36.713 [restartedMain] LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[WARN ] 2021-08-01 11:54:36.984 [restartedMain] JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[INFO ] 2021-08-01 11:54:37.088 [restartedMain] DefaultSecurityFilterChain - Will secure Ant [pattern='/css/**'] with []
+[INFO ] 2021-08-01 11:54:37.088 [restartedMain] DefaultSecurityFilterChain - Will secure Ant [pattern='/js/**'] with []
+[INFO ] 2021-08-01 11:54:37.088 [restartedMain] DefaultSecurityFilterChain - Will secure Ant [pattern='/img/**'] with []
+[INFO ] 2021-08-01 11:54:37.089 [restartedMain] DefaultSecurityFilterChain - Will secure Ant [pattern='/templates/menu.html'] with []
+[INFO ] 2021-08-01 11:54:37.114 [restartedMain] DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@e8fb7b, org.springframework.security.web.context.SecurityContextPersistenceFilter@6724bde4, org.springframework.security.web.header.HeaderWriterFilter@4ec0078, org.springframework.security.web.csrf.CsrfFilter@44803ed1, org.springframework.security.web.authentication.logout.LogoutFilter@4ca4f60b, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@179f38e9, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7e940cd6, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@52a859ac, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@ac789a3, org.springframework.security.web.session.SessionManagementFilter@f823cc9, org.springframework.security.web.access.ExceptionTranslationFilter@6f99907c, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@3c5086f7]
+[INFO ] 2021-08-01 11:54:37.194 [restartedMain] ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+[INFO ] 2021-08-01 11:54:37.360 [restartedMain] OptionalLiveReloadServer - LiveReload server is running on port 35729
+[INFO ] 2021-08-01 11:54:37.372 [restartedMain] Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+[INFO ] 2021-08-01 11:54:37.388 [restartedMain] TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+[INFO ] 2021-08-01 11:54:37.396 [restartedMain] CocoApplication - Started CocoApplication in 3.154 seconds (JVM running for 4.37)
+[INFO ] 2021-08-01 11:54:39.819 [http-nio-8080-exec-1] [/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[INFO ] 2021-08-01 11:54:39.820 [http-nio-8080-exec-1] DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[INFO ] 2021-08-01 11:54:39.821 [http-nio-8080-exec-1] DispatcherServlet - Completed initialization in 1 ms
+[INFO ] 2021-08-01 11:57:11.958 [background-preinit] Version - HV000001: Hibernate Validator 6.1.7.Final
+[INFO ] 2021-08-01 11:57:12.011 [restartedMain] CocoApplication - Starting CocoApplication using Java 1.8.0_251 on woogi with PID 2012 (D:\down\IntelliJ\loginTest1\build\classes\java\main started by tkddn in D:\down\IntelliJ\loginTest1)
+[INFO ] 2021-08-01 11:57:12.019 [restartedMain] CocoApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2021-08-01 11:57:12.055 [restartedMain] DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[INFO ] 2021-08-01 11:57:12.055 [restartedMain] DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[INFO ] 2021-08-01 11:57:12.587 [restartedMain] RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[INFO ] 2021-08-01 11:57:12.629 [restartedMain] RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 35 ms. Found 1 JPA repository interfaces.
+[INFO ] 2021-08-01 11:57:13.099 [restartedMain] TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+[INFO ] 2021-08-01 11:57:13.107 [restartedMain] Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+[INFO ] 2021-08-01 11:57:13.108 [restartedMain] StandardService - Starting service [Tomcat]
+[INFO ] 2021-08-01 11:57:13.108 [restartedMain] StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.43]
+[INFO ] 2021-08-01 11:57:13.227 [restartedMain] [/] - Initializing Spring embedded WebApplicationContext
+[INFO ] 2021-08-01 11:57:13.228 [restartedMain] ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1172 ms
+[INFO ] 2021-08-01 11:57:13.317 [restartedMain] HikariDataSource - HikariPool-1 - Starting...
+[INFO ] 2021-08-01 11:57:13.437 [restartedMain] HikariDataSource - HikariPool-1 - Start completed.
+[INFO ] 2021-08-01 11:57:13.468 [restartedMain] LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+[INFO ] 2021-08-01 11:57:13.504 [restartedMain] Version - HHH000412: Hibernate ORM core version 5.4.28.Final
+[INFO ] 2021-08-01 11:57:13.611 [restartedMain] Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[INFO ] 2021-08-01 11:57:13.700 [restartedMain] Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+[INFO ] 2021-08-01 11:57:14.097 [restartedMain] JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[INFO ] 2021-08-01 11:57:14.106 [restartedMain] LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[WARN ] 2021-08-01 11:57:14.356 [restartedMain] JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[INFO ] 2021-08-01 11:57:14.471 [restartedMain] DefaultSecurityFilterChain - Will secure Ant [pattern='/css/**'] with []
+[INFO ] 2021-08-01 11:57:14.471 [restartedMain] DefaultSecurityFilterChain - Will secure Ant [pattern='/js/**'] with []
+[INFO ] 2021-08-01 11:57:14.471 [restartedMain] DefaultSecurityFilterChain - Will secure Ant [pattern='/img/**'] with []
+[INFO ] 2021-08-01 11:57:14.473 [restartedMain] DefaultSecurityFilterChain - Will secure Ant [pattern='/templates/menu.html'] with []
+[INFO ] 2021-08-01 11:57:14.497 [restartedMain] DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3533c4bb, org.springframework.security.web.context.SecurityContextPersistenceFilter@186892be, org.springframework.security.web.header.HeaderWriterFilter@6f3b27af, org.springframework.security.web.csrf.CsrfFilter@4bba66e7, org.springframework.security.web.authentication.logout.LogoutFilter@1469c416, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@7ebb9fc, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@174148e5, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@16705401, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@15f46494, org.springframework.security.web.session.SessionManagementFilter@11a5236a, org.springframework.security.web.access.ExceptionTranslationFilter@4cda0a86, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@79b71640]
+[INFO ] 2021-08-01 11:57:14.581 [restartedMain] ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+[INFO ] 2021-08-01 11:57:14.750 [restartedMain] OptionalLiveReloadServer - LiveReload server is running on port 35729
+[INFO ] 2021-08-01 11:57:14.762 [restartedMain] Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+[INFO ] 2021-08-01 11:57:14.777 [restartedMain] TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+[INFO ] 2021-08-01 11:57:14.788 [restartedMain] CocoApplication - Started CocoApplication in 3.077 seconds (JVM running for 4.185)
+[INFO ] 2021-08-01 11:57:19.282 [http-nio-8080-exec-1] [/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[INFO ] 2021-08-01 11:57:19.283 [http-nio-8080-exec-1] DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[INFO ] 2021-08-01 11:57:19.283 [http-nio-8080-exec-1] DispatcherServlet - Completed initialization in 0 ms
+[INFO ] 2021-08-01 12:00:44.916 [background-preinit] Version - HV000001: Hibernate Validator 6.1.7.Final
+[INFO ] 2021-08-01 12:00:44.972 [restartedMain] CocoApplication - Starting CocoApplication using Java 1.8.0_251 on woogi with PID 18024 (D:\down\IntelliJ\loginTest1\build\classes\java\main started by tkddn in D:\down\IntelliJ\loginTest1)
+[INFO ] 2021-08-01 12:00:44.980 [restartedMain] CocoApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2021-08-01 12:00:45.013 [restartedMain] DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[INFO ] 2021-08-01 12:00:45.014 [restartedMain] DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[INFO ] 2021-08-01 12:00:45.548 [restartedMain] RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[INFO ] 2021-08-01 12:00:45.589 [restartedMain] RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 35 ms. Found 1 JPA repository interfaces.
+[INFO ] 2021-08-01 12:00:46.067 [restartedMain] TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+[INFO ] 2021-08-01 12:00:46.076 [restartedMain] Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+[INFO ] 2021-08-01 12:00:46.077 [restartedMain] StandardService - Starting service [Tomcat]
+[INFO ] 2021-08-01 12:00:46.077 [restartedMain] StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.43]
+[INFO ] 2021-08-01 12:00:46.206 [restartedMain] [/] - Initializing Spring embedded WebApplicationContext
+[INFO ] 2021-08-01 12:00:46.206 [restartedMain] ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1191 ms
+[INFO ] 2021-08-01 12:00:46.295 [restartedMain] HikariDataSource - HikariPool-1 - Starting...
+[INFO ] 2021-08-01 12:00:46.413 [restartedMain] HikariDataSource - HikariPool-1 - Start completed.
+[INFO ] 2021-08-01 12:00:46.445 [restartedMain] LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+[INFO ] 2021-08-01 12:00:46.480 [restartedMain] Version - HHH000412: Hibernate ORM core version 5.4.28.Final
+[INFO ] 2021-08-01 12:00:46.585 [restartedMain] Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[INFO ] 2021-08-01 12:00:46.673 [restartedMain] Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+[INFO ] 2021-08-01 12:00:47.073 [restartedMain] JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[INFO ] 2021-08-01 12:00:47.081 [restartedMain] LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[WARN ] 2021-08-01 12:00:47.349 [restartedMain] JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[INFO ] 2021-08-01 12:00:47.452 [restartedMain] DefaultSecurityFilterChain - Will secure Ant [pattern='/css/**'] with []
+[INFO ] 2021-08-01 12:00:47.452 [restartedMain] DefaultSecurityFilterChain - Will secure Ant [pattern='/js/**'] with []
+[INFO ] 2021-08-01 12:00:47.452 [restartedMain] DefaultSecurityFilterChain - Will secure Ant [pattern='/img/**'] with []
+[INFO ] 2021-08-01 12:00:47.453 [restartedMain] DefaultSecurityFilterChain - Will secure Ant [pattern='/templates/menu.html'] with []
+[INFO ] 2021-08-01 12:00:47.479 [restartedMain] DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@32480fb8, org.springframework.security.web.context.SecurityContextPersistenceFilter@7152453f, org.springframework.security.web.header.HeaderWriterFilter@76f18675, org.springframework.security.web.csrf.CsrfFilter@1e2403e4, org.springframework.security.web.authentication.logout.LogoutFilter@794d7223, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@2549bd3f, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3a81352a, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@13e82124, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@29473e0b, org.springframework.security.web.session.SessionManagementFilter@cf69b94, org.springframework.security.web.access.ExceptionTranslationFilter@7967e0dd, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@2c189549]
+[INFO ] 2021-08-01 12:00:47.563 [restartedMain] ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+[INFO ] 2021-08-01 12:00:47.728 [restartedMain] OptionalLiveReloadServer - LiveReload server is running on port 35729
+[INFO ] 2021-08-01 12:00:47.740 [restartedMain] Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+[INFO ] 2021-08-01 12:00:47.756 [restartedMain] TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+[INFO ] 2021-08-01 12:00:47.763 [restartedMain] CocoApplication - Started CocoApplication in 3.087 seconds (JVM running for 4.199)
+[INFO ] 2021-08-01 12:00:52.626 [http-nio-8080-exec-1] [/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[INFO ] 2021-08-01 12:00:52.627 [http-nio-8080-exec-1] DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[INFO ] 2021-08-01 12:00:52.627 [http-nio-8080-exec-1] DispatcherServlet - Completed initialization in 0 ms
+[INFO ] 2021-08-01 13:26:42.978 [background-preinit] Version - HV000001: Hibernate Validator 6.1.7.Final
+[INFO ] 2021-08-01 13:26:43.007 [restartedMain] CocoApplication - Starting CocoApplication using Java 1.8.0_251 on woogi with PID 8172 (D:\down\IntelliJ\loginTest1\build\classes\java\main started by tkddn in D:\down\IntelliJ\loginTest1)
+[INFO ] 2021-08-01 13:26:43.014 [restartedMain] CocoApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2021-08-01 13:26:43.073 [restartedMain] DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[INFO ] 2021-08-01 13:26:43.073 [restartedMain] DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[INFO ] 2021-08-01 13:26:43.611 [restartedMain] RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[INFO ] 2021-08-01 13:26:43.658 [restartedMain] RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 41 ms. Found 1 JPA repository interfaces.
+[INFO ] 2021-08-01 13:26:44.133 [restartedMain] TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+[INFO ] 2021-08-01 13:26:44.141 [restartedMain] Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+[INFO ] 2021-08-01 13:26:44.142 [restartedMain] StandardService - Starting service [Tomcat]
+[INFO ] 2021-08-01 13:26:44.142 [restartedMain] StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.43]
+[INFO ] 2021-08-01 13:26:44.265 [restartedMain] [/] - Initializing Spring embedded WebApplicationContext
+[INFO ] 2021-08-01 13:26:44.265 [restartedMain] ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1191 ms
+[INFO ] 2021-08-01 13:26:44.357 [restartedMain] HikariDataSource - HikariPool-1 - Starting...
+[INFO ] 2021-08-01 13:26:44.480 [restartedMain] HikariDataSource - HikariPool-1 - Start completed.
+[INFO ] 2021-08-01 13:26:44.512 [restartedMain] LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+[INFO ] 2021-08-01 13:26:44.547 [restartedMain] Version - HHH000412: Hibernate ORM core version 5.4.28.Final
+[INFO ] 2021-08-01 13:26:44.658 [restartedMain] Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[INFO ] 2021-08-01 13:26:44.748 [restartedMain] Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+[INFO ] 2021-08-01 13:26:45.152 [restartedMain] JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[INFO ] 2021-08-01 13:26:45.160 [restartedMain] LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[WARN ] 2021-08-01 13:26:45.419 [restartedMain] JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[INFO ] 2021-08-01 13:26:45.535 [restartedMain] DefaultSecurityFilterChain - Will secure Ant [pattern='/css/**'] with []
+[INFO ] 2021-08-01 13:26:45.535 [restartedMain] DefaultSecurityFilterChain - Will secure Ant [pattern='/js/**'] with []
+[INFO ] 2021-08-01 13:26:45.536 [restartedMain] DefaultSecurityFilterChain - Will secure Ant [pattern='/img/**'] with []
+[INFO ] 2021-08-01 13:26:45.537 [restartedMain] DefaultSecurityFilterChain - Will secure Ant [pattern='/templates/menu.html'] with []
+[INFO ] 2021-08-01 13:26:45.561 [restartedMain] DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@49ee3eed, org.springframework.security.web.context.SecurityContextPersistenceFilter@fd902d3, org.springframework.security.web.header.HeaderWriterFilter@6a9d305, org.springframework.security.web.csrf.CsrfFilter@45f90944, org.springframework.security.web.authentication.logout.LogoutFilter@3215b7e1, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@40346c8f, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@23cc971c, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1c6dac8f, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@656e3f7e, org.springframework.security.web.session.SessionManagementFilter@3f0b886f, org.springframework.security.web.access.ExceptionTranslationFilter@596529a1, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@76b671c9]
+[INFO ] 2021-08-01 13:26:45.643 [restartedMain] ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+[INFO ] 2021-08-01 13:26:45.809 [restartedMain] OptionalLiveReloadServer - LiveReload server is running on port 35729
+[INFO ] 2021-08-01 13:26:45.823 [restartedMain] Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+[INFO ] 2021-08-01 13:26:45.841 [restartedMain] TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+[INFO ] 2021-08-01 13:26:45.848 [restartedMain] CocoApplication - Started CocoApplication in 3.115 seconds (JVM running for 4.267)
+[INFO ] 2021-08-01 13:26:49.530 [http-nio-8080-exec-1] [/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[INFO ] 2021-08-01 13:26:49.531 [http-nio-8080-exec-1] DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[INFO ] 2021-08-01 13:26:49.531 [http-nio-8080-exec-1] DispatcherServlet - Completed initialization in 0 ms
+[INFO ] 2021-08-01 13:31:37.062 [background-preinit] Version - HV000001: Hibernate Validator 6.1.7.Final
+[INFO ] 2021-08-01 13:31:37.094 [restartedMain] CocoApplication - Starting CocoApplication using Java 1.8.0_251 on woogi with PID 20880 (D:\down\IntelliJ\loginTest1\build\classes\java\main started by tkddn in D:\down\IntelliJ\loginTest1)
+[INFO ] 2021-08-01 13:31:37.102 [restartedMain] CocoApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2021-08-01 13:31:37.172 [restartedMain] DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[INFO ] 2021-08-01 13:31:37.172 [restartedMain] DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[INFO ] 2021-08-01 13:31:37.718 [restartedMain] RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[INFO ] 2021-08-01 13:31:37.763 [restartedMain] RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 38 ms. Found 1 JPA repository interfaces.
+[INFO ] 2021-08-01 13:31:38.290 [restartedMain] TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+[INFO ] 2021-08-01 13:31:38.299 [restartedMain] Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+[INFO ] 2021-08-01 13:31:38.299 [restartedMain] StandardService - Starting service [Tomcat]
+[INFO ] 2021-08-01 13:31:38.299 [restartedMain] StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.43]
+[INFO ] 2021-08-01 13:31:38.423 [restartedMain] [/] - Initializing Spring embedded WebApplicationContext
+[INFO ] 2021-08-01 13:31:38.423 [restartedMain] ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1250 ms
+[INFO ] 2021-08-01 13:31:38.510 [restartedMain] HikariDataSource - HikariPool-1 - Starting...
+[INFO ] 2021-08-01 13:31:38.627 [restartedMain] HikariDataSource - HikariPool-1 - Start completed.
+[INFO ] 2021-08-01 13:31:38.657 [restartedMain] LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+[INFO ] 2021-08-01 13:31:38.694 [restartedMain] Version - HHH000412: Hibernate ORM core version 5.4.28.Final
+[INFO ] 2021-08-01 13:31:38.801 [restartedMain] Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[INFO ] 2021-08-01 13:31:38.898 [restartedMain] Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+[INFO ] 2021-08-01 13:31:39.354 [restartedMain] JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[INFO ] 2021-08-01 13:31:39.362 [restartedMain] LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[WARN ] 2021-08-01 13:31:39.616 [restartedMain] JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[INFO ] 2021-08-01 13:31:39.721 [restartedMain] DefaultSecurityFilterChain - Will secure Ant [pattern='/css/**'] with []
+[INFO ] 2021-08-01 13:31:39.721 [restartedMain] DefaultSecurityFilterChain - Will secure Ant [pattern='/js/**'] with []
+[INFO ] 2021-08-01 13:31:39.721 [restartedMain] DefaultSecurityFilterChain - Will secure Ant [pattern='/img/**'] with []
+[INFO ] 2021-08-01 13:31:39.722 [restartedMain] DefaultSecurityFilterChain - Will secure Ant [pattern='/templates/menu.html'] with []
+[INFO ] 2021-08-01 13:31:39.748 [restartedMain] DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@552b23be, org.springframework.security.web.context.SecurityContextPersistenceFilter@1ae2b638, org.springframework.security.web.header.HeaderWriterFilter@16275b08, org.springframework.security.web.csrf.CsrfFilter@7f022f, org.springframework.security.web.authentication.logout.LogoutFilter@56e46514, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@5481c226, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@69bd9901, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6b8a7f34, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7287cbe, org.springframework.security.web.session.SessionManagementFilter@75b4e385, org.springframework.security.web.access.ExceptionTranslationFilter@4b78b54b, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@7c4be6ff]
+[INFO ] 2021-08-01 13:31:39.838 [restartedMain] ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+[INFO ] 2021-08-01 13:31:40.013 [restartedMain] OptionalLiveReloadServer - LiveReload server is running on port 35729
+[INFO ] 2021-08-01 13:31:40.026 [restartedMain] Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+[INFO ] 2021-08-01 13:31:40.045 [restartedMain] TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+[INFO ] 2021-08-01 13:31:40.053 [restartedMain] CocoApplication - Started CocoApplication in 3.237 seconds (JVM running for 4.413)
+[INFO ] 2021-08-01 13:31:44.650 [http-nio-8080-exec-1] [/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[INFO ] 2021-08-01 13:31:44.651 [http-nio-8080-exec-1] DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[INFO ] 2021-08-01 13:31:44.651 [http-nio-8080-exec-1] DispatcherServlet - Completed initialization in 0 ms
+[INFO ] 2021-08-01 13:32:55.308 [background-preinit] Version - HV000001: Hibernate Validator 6.1.7.Final
+[INFO ] 2021-08-01 13:32:55.336 [restartedMain] CocoApplication - Starting CocoApplication using Java 1.8.0_251 on woogi with PID 20032 (D:\down\IntelliJ\loginTest1\build\classes\java\main started by tkddn in D:\down\IntelliJ\loginTest1)
+[INFO ] 2021-08-01 13:32:55.345 [restartedMain] CocoApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2021-08-01 13:32:55.408 [restartedMain] DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[INFO ] 2021-08-01 13:32:55.409 [restartedMain] DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[INFO ] 2021-08-01 13:32:55.949 [restartedMain] RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[INFO ] 2021-08-01 13:32:55.991 [restartedMain] RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 35 ms. Found 1 JPA repository interfaces.
+[INFO ] 2021-08-01 13:32:56.492 [restartedMain] TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+[INFO ] 2021-08-01 13:32:56.501 [restartedMain] Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+[INFO ] 2021-08-01 13:32:56.501 [restartedMain] StandardService - Starting service [Tomcat]
+[INFO ] 2021-08-01 13:32:56.502 [restartedMain] StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.43]
+[INFO ] 2021-08-01 13:32:56.620 [restartedMain] [/] - Initializing Spring embedded WebApplicationContext
+[INFO ] 2021-08-01 13:32:56.620 [restartedMain] ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1210 ms
+[INFO ] 2021-08-01 13:32:56.701 [restartedMain] HikariDataSource - HikariPool-1 - Starting...
+[INFO ] 2021-08-01 13:32:56.813 [restartedMain] HikariDataSource - HikariPool-1 - Start completed.
+[INFO ] 2021-08-01 13:32:56.844 [restartedMain] LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+[INFO ] 2021-08-01 13:32:56.877 [restartedMain] Version - HHH000412: Hibernate ORM core version 5.4.28.Final
+[INFO ] 2021-08-01 13:32:56.978 [restartedMain] Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[INFO ] 2021-08-01 13:32:57.070 [restartedMain] Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+[INFO ] 2021-08-01 13:32:57.500 [restartedMain] JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[INFO ] 2021-08-01 13:32:57.508 [restartedMain] LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[WARN ] 2021-08-01 13:32:57.758 [restartedMain] JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[INFO ] 2021-08-01 13:32:57.857 [restartedMain] DefaultSecurityFilterChain - Will secure Ant [pattern='/css/**'] with []
+[INFO ] 2021-08-01 13:32:57.858 [restartedMain] DefaultSecurityFilterChain - Will secure Ant [pattern='/js/**'] with []
+[INFO ] 2021-08-01 13:32:57.858 [restartedMain] DefaultSecurityFilterChain - Will secure Ant [pattern='/img/**'] with []
+[INFO ] 2021-08-01 13:32:57.859 [restartedMain] DefaultSecurityFilterChain - Will secure Ant [pattern='/templates/menu.html'] with []
+[INFO ] 2021-08-01 13:32:57.883 [restartedMain] DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4276d096, org.springframework.security.web.context.SecurityContextPersistenceFilter@429a9766, org.springframework.security.web.header.HeaderWriterFilter@2397066b, org.springframework.security.web.csrf.CsrfFilter@37fe7e2e, org.springframework.security.web.authentication.logout.LogoutFilter@76cd170d, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@60b085bb, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@48a1f5cc, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3b357456, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@412ab039, org.springframework.security.web.session.SessionManagementFilter@7873737d, org.springframework.security.web.access.ExceptionTranslationFilter@481163aa, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@70750281]
+[INFO ] 2021-08-01 13:32:57.962 [restartedMain] ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+[INFO ] 2021-08-01 13:32:58.125 [restartedMain] OptionalLiveReloadServer - LiveReload server is running on port 35729
+[INFO ] 2021-08-01 13:32:58.138 [restartedMain] Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+[INFO ] 2021-08-01 13:32:58.153 [restartedMain] TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+[INFO ] 2021-08-01 13:32:58.160 [restartedMain] CocoApplication - Started CocoApplication in 3.089 seconds (JVM running for 4.223)
+[INFO ] 2021-08-01 13:33:00.858 [http-nio-8080-exec-1] [/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[INFO ] 2021-08-01 13:33:00.858 [http-nio-8080-exec-1] DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[INFO ] 2021-08-01 13:33:00.859 [http-nio-8080-exec-1] DispatcherServlet - Completed initialization in 1 ms
+[INFO ] 2021-08-01 13:33:44.767 [background-preinit] Version - HV000001: Hibernate Validator 6.1.7.Final
+[INFO ] 2021-08-01 13:33:44.819 [restartedMain] CocoApplication - Starting CocoApplication using Java 1.8.0_251 on woogi with PID 16092 (D:\down\IntelliJ\loginTest1\build\classes\java\main started by tkddn in D:\down\IntelliJ\loginTest1)
+[INFO ] 2021-08-01 13:33:44.827 [restartedMain] CocoApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2021-08-01 13:33:44.861 [restartedMain] DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[INFO ] 2021-08-01 13:33:44.861 [restartedMain] DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[INFO ] 2021-08-01 13:33:45.401 [restartedMain] RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[INFO ] 2021-08-01 13:33:45.444 [restartedMain] RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 36 ms. Found 1 JPA repository interfaces.
+[INFO ] 2021-08-01 13:33:45.938 [restartedMain] TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+[INFO ] 2021-08-01 13:33:45.946 [restartedMain] Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+[INFO ] 2021-08-01 13:33:45.947 [restartedMain] StandardService - Starting service [Tomcat]
+[INFO ] 2021-08-01 13:33:45.947 [restartedMain] StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.43]
+[INFO ] 2021-08-01 13:33:46.078 [restartedMain] [/] - Initializing Spring embedded WebApplicationContext
+[INFO ] 2021-08-01 13:33:46.079 [restartedMain] ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1217 ms
+[INFO ] 2021-08-01 13:33:46.178 [restartedMain] HikariDataSource - HikariPool-1 - Starting...
+[INFO ] 2021-08-01 13:33:46.295 [restartedMain] HikariDataSource - HikariPool-1 - Start completed.
+[INFO ] 2021-08-01 13:33:46.327 [restartedMain] LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+[INFO ] 2021-08-01 13:33:46.363 [restartedMain] Version - HHH000412: Hibernate ORM core version 5.4.28.Final
+[INFO ] 2021-08-01 13:33:46.473 [restartedMain] Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[INFO ] 2021-08-01 13:33:46.559 [restartedMain] Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+[INFO ] 2021-08-01 13:33:46.965 [restartedMain] JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[INFO ] 2021-08-01 13:33:46.973 [restartedMain] LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[WARN ] 2021-08-01 13:33:47.227 [restartedMain] JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[INFO ] 2021-08-01 13:33:47.341 [restartedMain] DefaultSecurityFilterChain - Will secure Ant [pattern='/css/**'] with []
+[INFO ] 2021-08-01 13:33:47.341 [restartedMain] DefaultSecurityFilterChain - Will secure Ant [pattern='/js/**'] with []
+[INFO ] 2021-08-01 13:33:47.342 [restartedMain] DefaultSecurityFilterChain - Will secure Ant [pattern='/img/**'] with []
+[INFO ] 2021-08-01 13:33:47.343 [restartedMain] DefaultSecurityFilterChain - Will secure Ant [pattern='/templates/menu.html'] with []
+[INFO ] 2021-08-01 13:33:47.367 [restartedMain] DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7dfb99e0, org.springframework.security.web.context.SecurityContextPersistenceFilter@69bd9901, org.springframework.security.web.header.HeaderWriterFilter@75b4e385, org.springframework.security.web.csrf.CsrfFilter@5847e058, org.springframework.security.web.authentication.logout.LogoutFilter@621fe42, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@72340ca1, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5acb011b, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5671fc5f, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@ef0695a, org.springframework.security.web.session.SessionManagementFilter@1ae2b638, org.springframework.security.web.access.ExceptionTranslationFilter@76d0f638, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@30122a72]
+[INFO ] 2021-08-01 13:33:47.450 [restartedMain] ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+[INFO ] 2021-08-01 13:33:47.614 [restartedMain] OptionalLiveReloadServer - LiveReload server is running on port 35729
+[INFO ] 2021-08-01 13:33:47.627 [restartedMain] Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+[INFO ] 2021-08-01 13:33:47.644 [restartedMain] TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+[INFO ] 2021-08-01 13:33:47.651 [restartedMain] CocoApplication - Started CocoApplication in 3.126 seconds (JVM running for 4.26)
+[INFO ] 2021-08-01 13:33:52.333 [http-nio-8080-exec-1] [/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[INFO ] 2021-08-01 13:33:52.333 [http-nio-8080-exec-1] DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[INFO ] 2021-08-01 13:33:52.334 [http-nio-8080-exec-1] DispatcherServlet - Completed initialization in 1 ms
+[INFO ] 2021-08-01 13:34:56.502 [background-preinit] Version - HV000001: Hibernate Validator 6.1.7.Final
+[INFO ] 2021-08-01 13:34:56.554 [restartedMain] CocoApplication - Starting CocoApplication using Java 1.8.0_251 on woogi with PID 19368 (D:\down\IntelliJ\loginTest1\build\classes\java\main started by tkddn in D:\down\IntelliJ\loginTest1)
+[INFO ] 2021-08-01 13:34:56.562 [restartedMain] CocoApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2021-08-01 13:34:56.596 [restartedMain] DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[INFO ] 2021-08-01 13:34:56.597 [restartedMain] DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[INFO ] 2021-08-01 13:34:57.137 [restartedMain] RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[INFO ] 2021-08-01 13:34:57.180 [restartedMain] RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 36 ms. Found 1 JPA repository interfaces.
+[INFO ] 2021-08-01 13:34:57.647 [restartedMain] TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+[INFO ] 2021-08-01 13:34:57.655 [restartedMain] Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+[INFO ] 2021-08-01 13:34:57.656 [restartedMain] StandardService - Starting service [Tomcat]
+[INFO ] 2021-08-01 13:34:57.656 [restartedMain] StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.43]
+[INFO ] 2021-08-01 13:34:57.779 [restartedMain] [/] - Initializing Spring embedded WebApplicationContext
+[INFO ] 2021-08-01 13:34:57.780 [restartedMain] ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1182 ms
+[INFO ] 2021-08-01 13:34:57.874 [restartedMain] HikariDataSource - HikariPool-1 - Starting...
+[INFO ] 2021-08-01 13:34:57.994 [restartedMain] HikariDataSource - HikariPool-1 - Start completed.
+[INFO ] 2021-08-01 13:34:58.026 [restartedMain] LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+[INFO ] 2021-08-01 13:34:58.061 [restartedMain] Version - HHH000412: Hibernate ORM core version 5.4.28.Final
+[INFO ] 2021-08-01 13:34:58.167 [restartedMain] Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[INFO ] 2021-08-01 13:34:58.255 [restartedMain] Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+[INFO ] 2021-08-01 13:34:58.668 [restartedMain] JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[INFO ] 2021-08-01 13:34:58.676 [restartedMain] LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[WARN ] 2021-08-01 13:34:58.940 [restartedMain] JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[INFO ] 2021-08-01 13:34:59.066 [restartedMain] DefaultSecurityFilterChain - Will secure Ant [pattern='/css/**'] with []
+[INFO ] 2021-08-01 13:34:59.066 [restartedMain] DefaultSecurityFilterChain - Will secure Ant [pattern='/js/**'] with []
+[INFO ] 2021-08-01 13:34:59.066 [restartedMain] DefaultSecurityFilterChain - Will secure Ant [pattern='/img/**'] with []
+[INFO ] 2021-08-01 13:34:59.068 [restartedMain] DefaultSecurityFilterChain - Will secure Ant [pattern='/templates/menu.html'] with []
+[INFO ] 2021-08-01 13:34:59.092 [restartedMain] DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5ae3a187, org.springframework.security.web.context.SecurityContextPersistenceFilter@3343852d, org.springframework.security.web.header.HeaderWriterFilter@2eb9bc0d, org.springframework.security.web.csrf.CsrfFilter@4b34beb0, org.springframework.security.web.authentication.logout.LogoutFilter@568f920f, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@1bafc17c, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@d009d55, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@76d473a9, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@426a76c8, org.springframework.security.web.session.SessionManagementFilter@15cd245b, org.springframework.security.web.access.ExceptionTranslationFilter@1124ee14, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@a2c09d5]
+[INFO ] 2021-08-01 13:34:59.181 [restartedMain] ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+[INFO ] 2021-08-01 13:34:59.354 [restartedMain] OptionalLiveReloadServer - LiveReload server is running on port 35729
+[INFO ] 2021-08-01 13:34:59.367 [restartedMain] Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+[INFO ] 2021-08-01 13:34:59.385 [restartedMain] TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+[INFO ] 2021-08-01 13:34:59.393 [restartedMain] CocoApplication - Started CocoApplication in 3.134 seconds (JVM running for 4.269)
+[INFO ] 2021-08-01 13:35:02.530 [http-nio-8080-exec-1] [/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[INFO ] 2021-08-01 13:35:02.532 [http-nio-8080-exec-1] DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[INFO ] 2021-08-01 13:35:02.532 [http-nio-8080-exec-1] DispatcherServlet - Completed initialization in 0 ms
+[INFO ] 2021-08-01 13:36:09.062 [background-preinit] Version - HV000001: Hibernate Validator 6.1.7.Final
+[INFO ] 2021-08-01 13:36:09.117 [restartedMain] CocoApplication - Starting CocoApplication using Java 1.8.0_251 on woogi with PID 19760 (D:\down\IntelliJ\loginTest1\build\classes\java\main started by tkddn in D:\down\IntelliJ\loginTest1)
+[INFO ] 2021-08-01 13:36:09.124 [restartedMain] CocoApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2021-08-01 13:36:09.161 [restartedMain] DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[INFO ] 2021-08-01 13:36:09.161 [restartedMain] DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[INFO ] 2021-08-01 13:36:09.722 [restartedMain] RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[INFO ] 2021-08-01 13:36:09.765 [restartedMain] RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 37 ms. Found 1 JPA repository interfaces.
+[INFO ] 2021-08-01 13:36:10.272 [restartedMain] TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+[INFO ] 2021-08-01 13:36:10.283 [restartedMain] Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+[INFO ] 2021-08-01 13:36:10.283 [restartedMain] StandardService - Starting service [Tomcat]
+[INFO ] 2021-08-01 13:36:10.284 [restartedMain] StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.43]
+[INFO ] 2021-08-01 13:36:10.416 [restartedMain] [/] - Initializing Spring embedded WebApplicationContext
+[INFO ] 2021-08-01 13:36:10.416 [restartedMain] ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1254 ms
+[INFO ] 2021-08-01 13:36:10.515 [restartedMain] HikariDataSource - HikariPool-1 - Starting...
+[INFO ] 2021-08-01 13:36:10.647 [restartedMain] HikariDataSource - HikariPool-1 - Start completed.
+[INFO ] 2021-08-01 13:36:10.683 [restartedMain] LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+[INFO ] 2021-08-01 13:36:10.719 [restartedMain] Version - HHH000412: Hibernate ORM core version 5.4.28.Final
+[INFO ] 2021-08-01 13:36:10.832 [restartedMain] Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[INFO ] 2021-08-01 13:36:10.924 [restartedMain] Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+[INFO ] 2021-08-01 13:36:11.352 [restartedMain] JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[INFO ] 2021-08-01 13:36:11.361 [restartedMain] LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[WARN ] 2021-08-01 13:36:11.647 [restartedMain] JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[INFO ] 2021-08-01 13:36:11.756 [restartedMain] DefaultSecurityFilterChain - Will secure Ant [pattern='/css/**'] with []
+[INFO ] 2021-08-01 13:36:11.756 [restartedMain] DefaultSecurityFilterChain - Will secure Ant [pattern='/js/**'] with []
+[INFO ] 2021-08-01 13:36:11.757 [restartedMain] DefaultSecurityFilterChain - Will secure Ant [pattern='/img/**'] with []
+[INFO ] 2021-08-01 13:36:11.759 [restartedMain] DefaultSecurityFilterChain - Will secure Ant [pattern='/templates/menu.html'] with []
+[INFO ] 2021-08-01 13:36:11.795 [restartedMain] DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5a05a28, org.springframework.security.web.context.SecurityContextPersistenceFilter@348b7168, org.springframework.security.web.header.HeaderWriterFilter@ab5be37, org.springframework.security.web.csrf.CsrfFilter@7290d586, org.springframework.security.web.authentication.logout.LogoutFilter@168092e3, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@7c912260, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@f92ee6c, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@28a83d4b, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@45aca6fe, org.springframework.security.web.session.SessionManagementFilter@6331a585, org.springframework.security.web.access.ExceptionTranslationFilter@7ed328f, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@596c2842]
+[INFO ] 2021-08-01 13:36:11.887 [restartedMain] ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+[INFO ] 2021-08-01 13:36:12.061 [restartedMain] OptionalLiveReloadServer - LiveReload server is running on port 35729
+[INFO ] 2021-08-01 13:36:12.073 [restartedMain] Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+[INFO ] 2021-08-01 13:36:12.091 [restartedMain] TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+[INFO ] 2021-08-01 13:36:12.100 [restartedMain] CocoApplication - Started CocoApplication in 3.296 seconds (JVM running for 4.435)
+[INFO ] 2021-08-01 13:36:15.277 [http-nio-8080-exec-1] [/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[INFO ] 2021-08-01 13:36:15.277 [http-nio-8080-exec-1] DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[INFO ] 2021-08-01 13:36:15.278 [http-nio-8080-exec-1] DispatcherServlet - Completed initialization in 1 ms
+[INFO ] 2021-08-01 13:41:51.304 [background-preinit] Version - HV000001: Hibernate Validator 6.1.7.Final
+[INFO ] 2021-08-01 13:41:51.359 [restartedMain] CocoApplication - Starting CocoApplication using Java 1.8.0_251 on woogi with PID 17132 (D:\down\IntelliJ\loginTest1\build\classes\java\main started by tkddn in D:\down\IntelliJ\loginTest1)
+[INFO ] 2021-08-01 13:41:51.366 [restartedMain] CocoApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2021-08-01 13:41:51.401 [restartedMain] DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[INFO ] 2021-08-01 13:41:51.401 [restartedMain] DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[INFO ] 2021-08-01 13:41:51.936 [restartedMain] RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[INFO ] 2021-08-01 13:41:51.979 [restartedMain] RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 36 ms. Found 1 JPA repository interfaces.
+[INFO ] 2021-08-01 13:41:52.452 [restartedMain] TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+[INFO ] 2021-08-01 13:41:52.460 [restartedMain] Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+[INFO ] 2021-08-01 13:41:52.460 [restartedMain] StandardService - Starting service [Tomcat]
+[INFO ] 2021-08-01 13:41:52.460 [restartedMain] StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.43]
+[INFO ] 2021-08-01 13:41:52.579 [restartedMain] [/] - Initializing Spring embedded WebApplicationContext
+[INFO ] 2021-08-01 13:41:52.579 [restartedMain] ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1177 ms
+[INFO ] 2021-08-01 13:41:52.669 [restartedMain] HikariDataSource - HikariPool-1 - Starting...
+[INFO ] 2021-08-01 13:41:52.788 [restartedMain] HikariDataSource - HikariPool-1 - Start completed.
+[INFO ] 2021-08-01 13:41:52.820 [restartedMain] LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+[INFO ] 2021-08-01 13:41:52.855 [restartedMain] Version - HHH000412: Hibernate ORM core version 5.4.28.Final
+[INFO ] 2021-08-01 13:41:52.958 [restartedMain] Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[INFO ] 2021-08-01 13:41:53.045 [restartedMain] Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+[INFO ] 2021-08-01 13:41:53.448 [restartedMain] JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[INFO ] 2021-08-01 13:41:53.457 [restartedMain] LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[WARN ] 2021-08-01 13:41:53.718 [restartedMain] JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[INFO ] 2021-08-01 13:41:53.827 [restartedMain] DefaultSecurityFilterChain - Will secure Ant [pattern='/css/**'] with []
+[INFO ] 2021-08-01 13:41:53.827 [restartedMain] DefaultSecurityFilterChain - Will secure Ant [pattern='/js/**'] with []
+[INFO ] 2021-08-01 13:41:53.827 [restartedMain] DefaultSecurityFilterChain - Will secure Ant [pattern='/img/**'] with []
+[INFO ] 2021-08-01 13:41:53.828 [restartedMain] DefaultSecurityFilterChain - Will secure Ant [pattern='/templates/menu.html'] with []
+[INFO ] 2021-08-01 13:41:53.853 [restartedMain] DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@46726c28, org.springframework.security.web.context.SecurityContextPersistenceFilter@4135cb5b, org.springframework.security.web.header.HeaderWriterFilter@6cf4477b, org.springframework.security.web.csrf.CsrfFilter@7356b7ca, org.springframework.security.web.authentication.logout.LogoutFilter@2c39d8fb, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@4a5f1d58, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@595e5e9, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6b8d169b, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@73791448, org.springframework.security.web.session.SessionManagementFilter@2a72c97b, org.springframework.security.web.access.ExceptionTranslationFilter@575a342f, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@2c9fb4b9]
+[INFO ] 2021-08-01 13:41:53.935 [restartedMain] ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+[INFO ] 2021-08-01 13:41:54.100 [restartedMain] OptionalLiveReloadServer - LiveReload server is running on port 35729
+[INFO ] 2021-08-01 13:41:54.112 [restartedMain] Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+[INFO ] 2021-08-01 13:41:54.128 [restartedMain] TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+[INFO ] 2021-08-01 13:41:54.135 [restartedMain] CocoApplication - Started CocoApplication in 3.083 seconds (JVM running for 4.391)
+[INFO ] 2021-08-01 13:41:57.360 [http-nio-8080-exec-1] [/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[INFO ] 2021-08-01 13:41:57.360 [http-nio-8080-exec-1] DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[INFO ] 2021-08-01 13:41:57.361 [http-nio-8080-exec-1] DispatcherServlet - Completed initialization in 1 ms
+[INFO ] 2021-08-01 13:44:17.166 [background-preinit] Version - HV000001: Hibernate Validator 6.1.7.Final
+[INFO ] 2021-08-01 13:44:17.220 [restartedMain] CocoApplication - Starting CocoApplication using Java 1.8.0_251 on woogi with PID 21804 (D:\down\IntelliJ\loginTest1\build\classes\java\main started by tkddn in D:\down\IntelliJ\loginTest1)
+[INFO ] 2021-08-01 13:44:17.228 [restartedMain] CocoApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2021-08-01 13:44:17.263 [restartedMain] DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[INFO ] 2021-08-01 13:44:17.264 [restartedMain] DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[INFO ] 2021-08-01 13:44:17.806 [restartedMain] RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[INFO ] 2021-08-01 13:44:17.848 [restartedMain] RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 36 ms. Found 1 JPA repository interfaces.
+[INFO ] 2021-08-01 13:44:18.319 [restartedMain] TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+[INFO ] 2021-08-01 13:44:18.327 [restartedMain] Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+[INFO ] 2021-08-01 13:44:18.328 [restartedMain] StandardService - Starting service [Tomcat]
+[INFO ] 2021-08-01 13:44:18.328 [restartedMain] StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.43]
+[INFO ] 2021-08-01 13:44:18.447 [restartedMain] [/] - Initializing Spring embedded WebApplicationContext
+[INFO ] 2021-08-01 13:44:18.447 [restartedMain] ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1182 ms
+[INFO ] 2021-08-01 13:44:18.538 [restartedMain] HikariDataSource - HikariPool-1 - Starting...
+[INFO ] 2021-08-01 13:44:18.658 [restartedMain] HikariDataSource - HikariPool-1 - Start completed.
+[INFO ] 2021-08-01 13:44:18.690 [restartedMain] LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+[INFO ] 2021-08-01 13:44:18.724 [restartedMain] Version - HHH000412: Hibernate ORM core version 5.4.28.Final
+[INFO ] 2021-08-01 13:44:18.832 [restartedMain] Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[INFO ] 2021-08-01 13:44:18.920 [restartedMain] Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+[INFO ] 2021-08-01 13:44:19.317 [restartedMain] JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[INFO ] 2021-08-01 13:44:19.326 [restartedMain] LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[WARN ] 2021-08-01 13:44:19.582 [restartedMain] JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[INFO ] 2021-08-01 13:44:19.696 [restartedMain] DefaultSecurityFilterChain - Will secure Ant [pattern='/css/**'] with []
+[INFO ] 2021-08-01 13:44:19.696 [restartedMain] DefaultSecurityFilterChain - Will secure Ant [pattern='/js/**'] with []
+[INFO ] 2021-08-01 13:44:19.697 [restartedMain] DefaultSecurityFilterChain - Will secure Ant [pattern='/img/**'] with []
+[INFO ] 2021-08-01 13:44:19.698 [restartedMain] DefaultSecurityFilterChain - Will secure Ant [pattern='/templates/menu.html'] with []
+[INFO ] 2021-08-01 13:44:19.722 [restartedMain] DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@12f3ca14, org.springframework.security.web.context.SecurityContextPersistenceFilter@1557777, org.springframework.security.web.header.HeaderWriterFilter@32f8239, org.springframework.security.web.csrf.CsrfFilter@39ee3889, org.springframework.security.web.authentication.logout.LogoutFilter@446238b0, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@38035e9, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@53a1e489, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@9731d83, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@244fc378, org.springframework.security.web.session.SessionManagementFilter@60ee1076, org.springframework.security.web.access.ExceptionTranslationFilter@27556e9e, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@31ca153]
+[INFO ] 2021-08-01 13:44:19.804 [restartedMain] ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+[INFO ] 2021-08-01 13:44:19.971 [restartedMain] OptionalLiveReloadServer - LiveReload server is running on port 35729
+[INFO ] 2021-08-01 13:44:19.984 [restartedMain] Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+[INFO ] 2021-08-01 13:44:20.000 [restartedMain] TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+[INFO ] 2021-08-01 13:44:20.007 [restartedMain] CocoApplication - Started CocoApplication in 3.085 seconds (JVM running for 4.2)
+[INFO ] 2021-08-01 13:44:23.474 [http-nio-8080-exec-1] [/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[INFO ] 2021-08-01 13:44:23.475 [http-nio-8080-exec-1] DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[INFO ] 2021-08-01 13:44:23.476 [http-nio-8080-exec-1] DispatcherServlet - Completed initialization in 0 ms
+[INFO ] 2021-08-01 13:46:14.565 [background-preinit] Version - HV000001: Hibernate Validator 6.1.7.Final
+[INFO ] 2021-08-01 13:46:14.620 [restartedMain] CocoApplication - Starting CocoApplication using Java 1.8.0_251 on woogi with PID 22984 (D:\down\IntelliJ\loginTest1\build\classes\java\main started by tkddn in D:\down\IntelliJ\loginTest1)
+[INFO ] 2021-08-01 13:46:14.629 [restartedMain] CocoApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2021-08-01 13:46:14.664 [restartedMain] DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[INFO ] 2021-08-01 13:46:14.664 [restartedMain] DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[INFO ] 2021-08-01 13:46:15.212 [restartedMain] RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[INFO ] 2021-08-01 13:46:15.258 [restartedMain] RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 39 ms. Found 1 JPA repository interfaces.
+[INFO ] 2021-08-01 13:46:15.748 [restartedMain] TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+[INFO ] 2021-08-01 13:46:15.757 [restartedMain] Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+[INFO ] 2021-08-01 13:46:15.758 [restartedMain] StandardService - Starting service [Tomcat]
+[INFO ] 2021-08-01 13:46:15.758 [restartedMain] StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.43]
+[INFO ] 2021-08-01 13:46:15.878 [restartedMain] [/] - Initializing Spring embedded WebApplicationContext
+[INFO ] 2021-08-01 13:46:15.878 [restartedMain] ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1213 ms
+[INFO ] 2021-08-01 13:46:15.986 [restartedMain] HikariDataSource - HikariPool-1 - Starting...
+[INFO ] 2021-08-01 13:46:16.113 [restartedMain] HikariDataSource - HikariPool-1 - Start completed.
+[INFO ] 2021-08-01 13:46:16.150 [restartedMain] LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+[INFO ] 2021-08-01 13:46:16.188 [restartedMain] Version - HHH000412: Hibernate ORM core version 5.4.28.Final
+[INFO ] 2021-08-01 13:46:16.303 [restartedMain] Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[INFO ] 2021-08-01 13:46:16.393 [restartedMain] Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+[INFO ] 2021-08-01 13:46:16.799 [restartedMain] JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[INFO ] 2021-08-01 13:46:16.807 [restartedMain] LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[WARN ] 2021-08-01 13:46:17.089 [restartedMain] JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[INFO ] 2021-08-01 13:46:17.203 [restartedMain] DefaultSecurityFilterChain - Will secure Ant [pattern='/css/**'] with []
+[INFO ] 2021-08-01 13:46:17.204 [restartedMain] DefaultSecurityFilterChain - Will secure Ant [pattern='/js/**'] with []
+[INFO ] 2021-08-01 13:46:17.204 [restartedMain] DefaultSecurityFilterChain - Will secure Ant [pattern='/img/**'] with []
+[INFO ] 2021-08-01 13:46:17.205 [restartedMain] DefaultSecurityFilterChain - Will secure Ant [pattern='/templates/menu.html'] with []
+[INFO ] 2021-08-01 13:46:17.230 [restartedMain] DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@74f88bdb, org.springframework.security.web.context.SecurityContextPersistenceFilter@48741e2a, org.springframework.security.web.header.HeaderWriterFilter@5b016436, org.springframework.security.web.csrf.CsrfFilter@1c5bc635, org.springframework.security.web.authentication.logout.LogoutFilter@62a8f68b, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@12e1245, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2cc225dd, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@54c87843, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3cbf014d, org.springframework.security.web.session.SessionManagementFilter@7dce4d73, org.springframework.security.web.access.ExceptionTranslationFilter@c7d620b, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@4c259bc4]
+[INFO ] 2021-08-01 13:46:17.316 [restartedMain] ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+[INFO ] 2021-08-01 13:46:17.489 [restartedMain] OptionalLiveReloadServer - LiveReload server is running on port 35729
+[INFO ] 2021-08-01 13:46:17.503 [restartedMain] Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+[INFO ] 2021-08-01 13:46:17.519 [restartedMain] TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+[INFO ] 2021-08-01 13:46:17.527 [restartedMain] CocoApplication - Started CocoApplication in 3.229 seconds (JVM running for 4.342)
+[INFO ] 2021-08-01 13:46:20.460 [http-nio-8080-exec-1] [/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[INFO ] 2021-08-01 13:46:20.460 [http-nio-8080-exec-1] DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[INFO ] 2021-08-01 13:46:20.461 [http-nio-8080-exec-1] DispatcherServlet - Completed initialization in 1 ms
+[INFO ] 2021-08-01 13:52:08.089 [background-preinit] Version - HV000001: Hibernate Validator 6.1.7.Final
+[INFO ] 2021-08-01 13:52:08.119 [restartedMain] CocoApplication - Starting CocoApplication using Java 1.8.0_251 on woogi with PID 5068 (D:\down\IntelliJ\loginTest1\build\classes\java\main started by tkddn in D:\down\IntelliJ\loginTest1)
+[INFO ] 2021-08-01 13:52:08.127 [restartedMain] CocoApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2021-08-01 13:52:08.193 [restartedMain] DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[INFO ] 2021-08-01 13:52:08.193 [restartedMain] DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[INFO ] 2021-08-01 13:52:08.728 [restartedMain] RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[INFO ] 2021-08-01 13:52:08.770 [restartedMain] RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 35 ms. Found 1 JPA repository interfaces.
+[INFO ] 2021-08-01 13:52:09.276 [restartedMain] TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+[INFO ] 2021-08-01 13:52:09.284 [restartedMain] Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+[INFO ] 2021-08-01 13:52:09.285 [restartedMain] StandardService - Starting service [Tomcat]
+[INFO ] 2021-08-01 13:52:09.285 [restartedMain] StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.43]
+[INFO ] 2021-08-01 13:52:09.404 [restartedMain] [/] - Initializing Spring embedded WebApplicationContext
+[INFO ] 2021-08-01 13:52:09.404 [restartedMain] ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1210 ms
+[INFO ] 2021-08-01 13:52:09.491 [restartedMain] HikariDataSource - HikariPool-1 - Starting...
+[INFO ] 2021-08-01 13:52:09.606 [restartedMain] HikariDataSource - HikariPool-1 - Start completed.
+[INFO ] 2021-08-01 13:52:09.636 [restartedMain] LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+[INFO ] 2021-08-01 13:52:09.669 [restartedMain] Version - HHH000412: Hibernate ORM core version 5.4.28.Final
+[INFO ] 2021-08-01 13:52:09.771 [restartedMain] Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[INFO ] 2021-08-01 13:52:09.863 [restartedMain] Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+[INFO ] 2021-08-01 13:52:10.284 [restartedMain] JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[INFO ] 2021-08-01 13:52:10.291 [restartedMain] LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[WARN ] 2021-08-01 13:52:10.545 [restartedMain] JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[INFO ] 2021-08-01 13:52:10.646 [restartedMain] DefaultSecurityFilterChain - Will secure Ant [pattern='/css/**'] with []
+[INFO ] 2021-08-01 13:52:10.646 [restartedMain] DefaultSecurityFilterChain - Will secure Ant [pattern='/js/**'] with []
+[INFO ] 2021-08-01 13:52:10.646 [restartedMain] DefaultSecurityFilterChain - Will secure Ant [pattern='/img/**'] with []
+[INFO ] 2021-08-01 13:52:10.647 [restartedMain] DefaultSecurityFilterChain - Will secure Ant [pattern='/templates/menu.html'] with []
+[INFO ] 2021-08-01 13:52:10.670 [restartedMain] DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3af44f9e, org.springframework.security.web.context.SecurityContextPersistenceFilter@c7d620b, org.springframework.security.web.header.HeaderWriterFilter@6283fde4, org.springframework.security.web.csrf.CsrfFilter@49a7d505, org.springframework.security.web.authentication.logout.LogoutFilter@2c4d5854, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@4c259bc4, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2b1890cf, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@133753a4, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3b8ad1cd, org.springframework.security.web.session.SessionManagementFilter@c71d2f6, org.springframework.security.web.access.ExceptionTranslationFilter@27d9de, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@df0320f]
+[INFO ] 2021-08-01 13:52:10.749 [restartedMain] ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+[INFO ] 2021-08-01 13:52:10.910 [restartedMain] OptionalLiveReloadServer - LiveReload server is running on port 35729
+[INFO ] 2021-08-01 13:52:10.922 [restartedMain] Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+[INFO ] 2021-08-01 13:52:10.938 [restartedMain] TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+[INFO ] 2021-08-01 13:52:10.945 [restartedMain] CocoApplication - Started CocoApplication in 3.092 seconds (JVM running for 4.184)
+[INFO ] 2021-08-01 13:52:17.742 [http-nio-8080-exec-1] [/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[INFO ] 2021-08-01 13:52:17.743 [http-nio-8080-exec-1] DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[INFO ] 2021-08-01 13:52:17.744 [http-nio-8080-exec-1] DispatcherServlet - Completed initialization in 1 ms
+[INFO ] 2021-08-01 13:52:31.018 [background-preinit] Version - HV000001: Hibernate Validator 6.1.7.Final
+[INFO ] 2021-08-01 13:52:31.050 [restartedMain] CocoApplication - Starting CocoApplication using Java 1.8.0_251 on woogi with PID 23128 (D:\down\IntelliJ\loginTest1\build\classes\java\main started by tkddn in D:\down\IntelliJ\loginTest1)
+[INFO ] 2021-08-01 13:52:31.064 [restartedMain] CocoApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2021-08-01 13:52:31.118 [restartedMain] DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[INFO ] 2021-08-01 13:52:31.118 [restartedMain] DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[INFO ] 2021-08-01 13:52:31.637 [restartedMain] RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[INFO ] 2021-08-01 13:52:31.680 [restartedMain] RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 36 ms. Found 1 JPA repository interfaces.
+[INFO ] 2021-08-01 13:52:32.166 [restartedMain] TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+[INFO ] 2021-08-01 13:52:32.175 [restartedMain] Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+[INFO ] 2021-08-01 13:52:32.176 [restartedMain] StandardService - Starting service [Tomcat]
+[INFO ] 2021-08-01 13:52:32.176 [restartedMain] StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.43]
+[INFO ] 2021-08-01 13:52:32.293 [restartedMain] [/] - Initializing Spring embedded WebApplicationContext
+[INFO ] 2021-08-01 13:52:32.294 [restartedMain] ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1174 ms
+[INFO ] 2021-08-01 13:52:32.376 [restartedMain] HikariDataSource - HikariPool-1 - Starting...
+[INFO ] 2021-08-01 13:52:32.488 [restartedMain] HikariDataSource - HikariPool-1 - Start completed.
+[INFO ] 2021-08-01 13:52:32.518 [restartedMain] LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+[INFO ] 2021-08-01 13:52:32.552 [restartedMain] Version - HHH000412: Hibernate ORM core version 5.4.28.Final
+[INFO ] 2021-08-01 13:52:32.654 [restartedMain] Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[INFO ] 2021-08-01 13:52:32.747 [restartedMain] Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+[INFO ] 2021-08-01 13:52:33.169 [restartedMain] JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[INFO ] 2021-08-01 13:52:33.177 [restartedMain] LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[WARN ] 2021-08-01 13:52:33.423 [restartedMain] JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[INFO ] 2021-08-01 13:52:33.524 [restartedMain] DefaultSecurityFilterChain - Will secure Ant [pattern='/css/**'] with []
+[INFO ] 2021-08-01 13:52:33.524 [restartedMain] DefaultSecurityFilterChain - Will secure Ant [pattern='/js/**'] with []
+[INFO ] 2021-08-01 13:52:33.524 [restartedMain] DefaultSecurityFilterChain - Will secure Ant [pattern='/img/**'] with []
+[INFO ] 2021-08-01 13:52:33.526 [restartedMain] DefaultSecurityFilterChain - Will secure Ant [pattern='/templates/menu.html'] with []
+[INFO ] 2021-08-01 13:52:33.549 [restartedMain] DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@46726c28, org.springframework.security.web.context.SecurityContextPersistenceFilter@4135cb5b, org.springframework.security.web.header.HeaderWriterFilter@6cf4477b, org.springframework.security.web.csrf.CsrfFilter@7356b7ca, org.springframework.security.web.authentication.logout.LogoutFilter@2c39d8fb, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@4a5f1d58, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@595e5e9, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6b8d169b, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@73791448, org.springframework.security.web.session.SessionManagementFilter@2a72c97b, org.springframework.security.web.access.ExceptionTranslationFilter@575a342f, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@2c9fb4b9]
+[INFO ] 2021-08-01 13:52:33.631 [restartedMain] ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+[INFO ] 2021-08-01 13:52:33.794 [restartedMain] OptionalLiveReloadServer - LiveReload server is running on port 35729
+[INFO ] 2021-08-01 13:52:33.806 [restartedMain] Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+[INFO ] 2021-08-01 13:52:33.822 [restartedMain] TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+[INFO ] 2021-08-01 13:52:33.829 [restartedMain] CocoApplication - Started CocoApplication in 3.043 seconds (JVM running for 4.178)
+[INFO ] 2021-08-01 13:52:36.762 [http-nio-8080-exec-1] [/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[INFO ] 2021-08-01 13:52:36.763 [http-nio-8080-exec-1] DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[INFO ] 2021-08-01 13:52:36.763 [http-nio-8080-exec-1] DispatcherServlet - Completed initialization in 0 ms
+[INFO ] 2021-08-01 13:53:04.235 [background-preinit] Version - HV000001: Hibernate Validator 6.1.7.Final
+[INFO ] 2021-08-01 13:53:04.264 [restartedMain] CocoApplication - Starting CocoApplication using Java 1.8.0_251 on woogi with PID 22344 (D:\down\IntelliJ\loginTest1\build\classes\java\main started by tkddn in D:\down\IntelliJ\loginTest1)
+[INFO ] 2021-08-01 13:53:04.272 [restartedMain] CocoApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2021-08-01 13:53:04.336 [restartedMain] DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[INFO ] 2021-08-01 13:53:04.336 [restartedMain] DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[INFO ] 2021-08-01 13:53:04.865 [restartedMain] RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[INFO ] 2021-08-01 13:53:04.908 [restartedMain] RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 35 ms. Found 1 JPA repository interfaces.
+[INFO ] 2021-08-01 13:53:05.434 [restartedMain] TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+[INFO ] 2021-08-01 13:53:05.444 [restartedMain] Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+[INFO ] 2021-08-01 13:53:05.444 [restartedMain] StandardService - Starting service [Tomcat]
+[INFO ] 2021-08-01 13:53:05.445 [restartedMain] StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.43]
+[INFO ] 2021-08-01 13:53:05.562 [restartedMain] [/] - Initializing Spring embedded WebApplicationContext
+[INFO ] 2021-08-01 13:53:05.563 [restartedMain] ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1226 ms
+[INFO ] 2021-08-01 13:53:05.647 [restartedMain] HikariDataSource - HikariPool-1 - Starting...
+[INFO ] 2021-08-01 13:53:05.761 [restartedMain] HikariDataSource - HikariPool-1 - Start completed.
+[INFO ] 2021-08-01 13:53:05.791 [restartedMain] LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+[INFO ] 2021-08-01 13:53:05.826 [restartedMain] Version - HHH000412: Hibernate ORM core version 5.4.28.Final
+[INFO ] 2021-08-01 13:53:05.928 [restartedMain] Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[INFO ] 2021-08-01 13:53:06.020 [restartedMain] Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+[INFO ] 2021-08-01 13:53:06.439 [restartedMain] JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[INFO ] 2021-08-01 13:53:06.447 [restartedMain] LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[WARN ] 2021-08-01 13:53:06.691 [restartedMain] JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[INFO ] 2021-08-01 13:53:06.791 [restartedMain] DefaultSecurityFilterChain - Will secure Ant [pattern='/css/**'] with []
+[INFO ] 2021-08-01 13:53:06.791 [restartedMain] DefaultSecurityFilterChain - Will secure Ant [pattern='/js/**'] with []
+[INFO ] 2021-08-01 13:53:06.792 [restartedMain] DefaultSecurityFilterChain - Will secure Ant [pattern='/img/**'] with []
+[INFO ] 2021-08-01 13:53:06.793 [restartedMain] DefaultSecurityFilterChain - Will secure Ant [pattern='/templates/menu.html'] with []
+[INFO ] 2021-08-01 13:53:06.816 [restartedMain] DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@ef0695a, org.springframework.security.web.context.SecurityContextPersistenceFilter@5acb011b, org.springframework.security.web.header.HeaderWriterFilter@1ae2b638, org.springframework.security.web.csrf.CsrfFilter@6e325476, org.springframework.security.web.authentication.logout.LogoutFilter@719412dd, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@d0ef4f7, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5b918e7c, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7efb3336, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2ca8de9, org.springframework.security.web.session.SessionManagementFilter@69bd9901, org.springframework.security.web.access.ExceptionTranslationFilter@16275b08, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@f0322fe]
+[INFO ] 2021-08-01 13:53:06.894 [restartedMain] ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+[INFO ] 2021-08-01 13:53:07.059 [restartedMain] OptionalLiveReloadServer - LiveReload server is running on port 35729
+[INFO ] 2021-08-01 13:53:07.071 [restartedMain] Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+[INFO ] 2021-08-01 13:53:07.087 [restartedMain] TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+[INFO ] 2021-08-01 13:53:07.094 [restartedMain] CocoApplication - Started CocoApplication in 3.096 seconds (JVM running for 4.209)
+[INFO ] 2021-08-01 13:53:10.091 [http-nio-8080-exec-1] [/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[INFO ] 2021-08-01 13:53:10.092 [http-nio-8080-exec-1] DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[INFO ] 2021-08-01 13:53:10.092 [http-nio-8080-exec-1] DispatcherServlet - Completed initialization in 0 ms
+[INFO ] 2021-08-01 14:18:53.108 [background-preinit] Version - HV000001: Hibernate Validator 6.1.7.Final
+[INFO ] 2021-08-01 14:18:53.138 [restartedMain] CocoApplication - Starting CocoApplication using Java 1.8.0_251 on woogi with PID 22996 (D:\down\IntelliJ\loginTest1\build\classes\java\main started by tkddn in D:\down\IntelliJ\loginTest1)
+[INFO ] 2021-08-01 14:18:53.146 [restartedMain] CocoApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2021-08-01 14:18:53.211 [restartedMain] DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[INFO ] 2021-08-01 14:18:53.211 [restartedMain] DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[INFO ] 2021-08-01 14:18:53.729 [restartedMain] RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[INFO ] 2021-08-01 14:18:53.771 [restartedMain] RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 35 ms. Found 1 JPA repository interfaces.
+[INFO ] 2021-08-01 14:18:54.260 [restartedMain] TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+[INFO ] 2021-08-01 14:18:54.268 [restartedMain] Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+[INFO ] 2021-08-01 14:18:54.269 [restartedMain] StandardService - Starting service [Tomcat]
+[INFO ] 2021-08-01 14:18:54.269 [restartedMain] StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.43]
+[INFO ] 2021-08-01 14:18:54.385 [restartedMain] [/] - Initializing Spring embedded WebApplicationContext
+[INFO ] 2021-08-01 14:18:54.386 [restartedMain] ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1174 ms
+[INFO ] 2021-08-01 14:18:54.469 [restartedMain] HikariDataSource - HikariPool-1 - Starting...
+[INFO ] 2021-08-01 14:18:54.597 [restartedMain] HikariDataSource - HikariPool-1 - Start completed.
+[INFO ] 2021-08-01 14:18:54.631 [restartedMain] LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+[INFO ] 2021-08-01 14:18:54.666 [restartedMain] Version - HHH000412: Hibernate ORM core version 5.4.28.Final
+[INFO ] 2021-08-01 14:18:54.769 [restartedMain] Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[INFO ] 2021-08-01 14:18:54.864 [restartedMain] Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+[INFO ] 2021-08-01 14:18:55.282 [restartedMain] JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[INFO ] 2021-08-01 14:18:55.290 [restartedMain] LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[WARN ] 2021-08-01 14:18:55.534 [restartedMain] JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[INFO ] 2021-08-01 14:18:55.634 [restartedMain] DefaultSecurityFilterChain - Will secure Ant [pattern='/css/**'] with []
+[INFO ] 2021-08-01 14:18:55.634 [restartedMain] DefaultSecurityFilterChain - Will secure Ant [pattern='/js/**'] with []
+[INFO ] 2021-08-01 14:18:55.634 [restartedMain] DefaultSecurityFilterChain - Will secure Ant [pattern='/img/**'] with []
+[INFO ] 2021-08-01 14:18:55.636 [restartedMain] DefaultSecurityFilterChain - Will secure Ant [pattern='/templates/menu.html'] with []
+[INFO ] 2021-08-01 14:18:55.659 [restartedMain] DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7c912260, org.springframework.security.web.context.SecurityContextPersistenceFilter@2f58c57e, org.springframework.security.web.header.HeaderWriterFilter@3a81352a, org.springframework.security.web.csrf.CsrfFilter@330e70fc, org.springframework.security.web.authentication.logout.LogoutFilter@22a10708, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@29473e0b, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@ab5be37, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@58d7f265, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6c7bd26f, org.springframework.security.web.session.SessionManagementFilter@7ed328f, org.springframework.security.web.access.ExceptionTranslationFilter@cf69b94, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@1e70d104]
+[INFO ] 2021-08-01 14:18:55.737 [restartedMain] ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+[INFO ] 2021-08-01 14:18:55.901 [restartedMain] OptionalLiveReloadServer - LiveReload server is running on port 35729
+[INFO ] 2021-08-01 14:18:55.913 [restartedMain] Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+[INFO ] 2021-08-01 14:18:55.928 [restartedMain] TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+[INFO ] 2021-08-01 14:18:55.935 [restartedMain] CocoApplication - Started CocoApplication in 3.063 seconds (JVM running for 4.178)
+[INFO ] 2021-08-01 14:19:07.253 [http-nio-8080-exec-1] [/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[INFO ] 2021-08-01 14:19:07.254 [http-nio-8080-exec-1] DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[INFO ] 2021-08-01 14:19:07.254 [http-nio-8080-exec-1] DispatcherServlet - Completed initialization in 0 ms
+[INFO ] 2021-08-01 14:19:17.378 [http-nio-8080-exec-9] UserController - 이메일 데이터 전송 확인
+[INFO ] 2021-08-01 14:19:17.379 [http-nio-8080-exec-9] UserController - 인증번호 : 
+[INFO ] 2021-08-01 14:24:11.188 [background-preinit] Version - HV000001: Hibernate Validator 6.1.7.Final
+[INFO ] 2021-08-01 14:24:11.215 [restartedMain] CocoApplication - Starting CocoApplication using Java 1.8.0_251 on woogi with PID 15604 (D:\down\IntelliJ\loginTest1\build\classes\java\main started by tkddn in D:\down\IntelliJ\loginTest1)
+[INFO ] 2021-08-01 14:24:11.220 [restartedMain] CocoApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2021-08-01 14:24:11.279 [restartedMain] DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[INFO ] 2021-08-01 14:24:11.279 [restartedMain] DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[INFO ] 2021-08-01 14:24:11.778 [restartedMain] RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[INFO ] 2021-08-01 14:24:11.819 [restartedMain] RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 35 ms. Found 1 JPA repository interfaces.
+[INFO ] 2021-08-01 14:24:12.292 [restartedMain] TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+[INFO ] 2021-08-01 14:24:12.299 [restartedMain] Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+[INFO ] 2021-08-01 14:24:12.299 [restartedMain] StandardService - Starting service [Tomcat]
+[INFO ] 2021-08-01 14:24:12.299 [restartedMain] StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.43]
+[INFO ] 2021-08-01 14:24:12.415 [restartedMain] [/] - Initializing Spring embedded WebApplicationContext
+[INFO ] 2021-08-01 14:24:12.416 [restartedMain] ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1136 ms
+[INFO ] 2021-08-01 14:24:12.503 [restartedMain] HikariDataSource - HikariPool-1 - Starting...
+[INFO ] 2021-08-01 14:24:12.621 [restartedMain] HikariDataSource - HikariPool-1 - Start completed.
+[INFO ] 2021-08-01 14:24:12.652 [restartedMain] LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+[INFO ] 2021-08-01 14:24:12.688 [restartedMain] Version - HHH000412: Hibernate ORM core version 5.4.28.Final
+[INFO ] 2021-08-01 14:24:12.791 [restartedMain] Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[INFO ] 2021-08-01 14:24:12.876 [restartedMain] Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+[INFO ] 2021-08-01 14:24:13.272 [restartedMain] JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[INFO ] 2021-08-01 14:24:13.280 [restartedMain] LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[WARN ] 2021-08-01 14:24:13.532 [restartedMain] JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[INFO ] 2021-08-01 14:24:13.643 [restartedMain] DefaultSecurityFilterChain - Will secure Ant [pattern='/css/**'] with []
+[INFO ] 2021-08-01 14:24:13.644 [restartedMain] DefaultSecurityFilterChain - Will secure Ant [pattern='/js/**'] with []
+[INFO ] 2021-08-01 14:24:13.644 [restartedMain] DefaultSecurityFilterChain - Will secure Ant [pattern='/img/**'] with []
+[INFO ] 2021-08-01 14:24:13.645 [restartedMain] DefaultSecurityFilterChain - Will secure Ant [pattern='/templates/menu.html'] with []
+[INFO ] 2021-08-01 14:24:13.668 [restartedMain] DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@73791448, org.springframework.security.web.context.SecurityContextPersistenceFilter@3990dab1, org.springframework.security.web.header.HeaderWriterFilter@30790488, org.springframework.security.web.csrf.CsrfFilter@1f85d89c, org.springframework.security.web.authentication.logout.LogoutFilter@57020a18, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@3ade97d6, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2e5841c0, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@43cc1d6b, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@136adc8e, org.springframework.security.web.session.SessionManagementFilter@fb49a49, org.springframework.security.web.access.ExceptionTranslationFilter@caa1f62, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@324905e2]
+[INFO ] 2021-08-01 14:24:13.746 [restartedMain] ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+[INFO ] 2021-08-01 14:24:13.908 [restartedMain] OptionalLiveReloadServer - LiveReload server is running on port 35729
+[INFO ] 2021-08-01 14:24:13.920 [restartedMain] Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+[INFO ] 2021-08-01 14:24:13.935 [restartedMain] TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+[INFO ] 2021-08-01 14:24:13.942 [restartedMain] CocoApplication - Started CocoApplication in 2.99 seconds (JVM running for 4.142)
+[INFO ] 2021-08-01 14:24:20.582 [http-nio-8080-exec-1] [/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[INFO ] 2021-08-01 14:24:20.583 [http-nio-8080-exec-1] DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[INFO ] 2021-08-01 14:24:20.583 [http-nio-8080-exec-1] DispatcherServlet - Completed initialization in 0 ms
+[INFO ] 2021-08-01 14:24:24.658 [http-nio-8080-exec-4] UserController - 이메일 데이터 전송 확인
+[INFO ] 2021-08-01 14:24:24.658 [http-nio-8080-exec-4] UserController - 인증번호 : aaaaaaaaa
+[ERROR] 2021-08-01 14:24:31.797 [http-nio-8080-exec-5] [dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.ClassCastException: java.lang.Boolean cannot be cast to java.lang.Integer] with root cause
+java.lang.ClassCastException: java.lang.Boolean cannot be cast to java.lang.Integer
+	at com.sun.proxy.$Proxy101.existsByName(Unknown Source) ~[?:?]
+	at logini.coco.service.UserService.userIdCheck(UserService.java:43) ~[main/:?]
+	at logini.coco.controller.UserController.idCheck(UserController.java:46) ~[main/:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_251]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_251]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_251]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_251]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:197) ~[spring-web-5.3.4.jar:5.3.4]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:141) ~[spring-web-5.3.4.jar:5.3.4]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106) ~[spring-webmvc-5.3.4.jar:5.3.4]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:894) ~[spring-webmvc-5.3.4.jar:5.3.4]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808) ~[spring-webmvc-5.3.4.jar:5.3.4]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.3.4.jar:5.3.4]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1060) ~[spring-webmvc-5.3.4.jar:5.3.4]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:962) ~[spring-webmvc-5.3.4.jar:5.3.4]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.3.4.jar:5.3.4]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898) ~[spring-webmvc-5.3.4.jar:5.3.4]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:626) ~[tomcat-embed-core-9.0.43.jar:4.0.FR]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.3.4.jar:5.3.4]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733) ~[tomcat-embed-core-9.0.43.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.43.jar:9.0.43]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:327) ~[spring-security-web-5.4.5.jar:5.4.5]
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:115) ~[spring-security-web-5.4.5.jar:5.4.5]
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:81) ~[spring-security-web-5.4.5.jar:5.4.5]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.4.5.jar:5.4.5]
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:119) ~[spring-security-web-5.4.5.jar:5.4.5]
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:113) ~[spring-security-web-5.4.5.jar:5.4.5]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.4.5.jar:5.4.5]
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:126) ~[spring-security-web-5.4.5.jar:5.4.5]
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:81) ~[spring-security-web-5.4.5.jar:5.4.5]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.4.5.jar:5.4.5]
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:105) ~[spring-security-web-5.4.5.jar:5.4.5]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.4.5.jar:5.4.5]
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:149) ~[spring-security-web-5.4.5.jar:5.4.5]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.4.5.jar:5.4.5]
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63) ~[spring-security-web-5.4.5.jar:5.4.5]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.4.5.jar:5.4.5]
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:218) ~[spring-security-web-5.4.5.jar:5.4.5]
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:212) ~[spring-security-web-5.4.5.jar:5.4.5]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.4.5.jar:5.4.5]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:103) ~[spring-security-web-5.4.5.jar:5.4.5]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:89) ~[spring-security-web-5.4.5.jar:5.4.5]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.4.5.jar:5.4.5]
+	at org.springframework.security.web.csrf.CsrfFilter.doFilterInternal(CsrfFilter.java:117) ~[spring-security-web-5.4.5.jar:5.4.5]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.4.jar:5.3.4]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.4.5.jar:5.4.5]
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90) ~[spring-security-web-5.4.5.jar:5.4.5]
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75) ~[spring-security-web-5.4.5.jar:5.4.5]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.4.jar:5.3.4]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.4.5.jar:5.4.5]
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:110) ~[spring-security-web-5.4.5.jar:5.4.5]
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:80) ~[spring-security-web-5.4.5.jar:5.4.5]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.4.5.jar:5.4.5]
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:55) ~[spring-security-web-5.4.5.jar:5.4.5]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.4.jar:5.3.4]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.4.5.jar:5.4.5]
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:211) ~[spring-security-web-5.4.5.jar:5.4.5]
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:183) ~[spring-security-web-5.4.5.jar:5.4.5]
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:358) ~[spring-web-5.3.4.jar:5.3.4]
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:271) ~[spring-web-5.3.4.jar:5.3.4]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.3.4.jar:5.3.4]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.4.jar:5.3.4]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.3.4.jar:5.3.4]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.4.jar:5.3.4]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.3.4.jar:5.3.4]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.4.jar:5.3.4]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202) [tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) [tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542) [tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143) [tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) [tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:346) [tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374) [tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:887) [tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1684) [tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-9.0.43.jar:9.0.43]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [?:1.8.0_251]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [?:1.8.0_251]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.43.jar:9.0.43]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_251]
+[INFO ] 2021-08-01 14:30:45.510 [background-preinit] Version - HV000001: Hibernate Validator 6.1.7.Final
+[INFO ] 2021-08-01 14:30:45.541 [restartedMain] CocoApplication - Starting CocoApplication using Java 1.8.0_251 on woogi with PID 9964 (D:\down\IntelliJ\loginTest1\build\classes\java\main started by tkddn in D:\down\IntelliJ\loginTest1)
+[INFO ] 2021-08-01 14:30:45.545 [restartedMain] CocoApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2021-08-01 14:30:45.604 [restartedMain] DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[INFO ] 2021-08-01 14:30:45.605 [restartedMain] DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[INFO ] 2021-08-01 14:30:46.132 [restartedMain] RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[INFO ] 2021-08-01 14:30:46.172 [restartedMain] RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 35 ms. Found 1 JPA repository interfaces.
+[INFO ] 2021-08-01 14:30:46.631 [restartedMain] TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+[INFO ] 2021-08-01 14:30:46.639 [restartedMain] Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+[INFO ] 2021-08-01 14:30:46.639 [restartedMain] StandardService - Starting service [Tomcat]
+[INFO ] 2021-08-01 14:30:46.640 [restartedMain] StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.43]
+[INFO ] 2021-08-01 14:30:46.756 [restartedMain] [/] - Initializing Spring embedded WebApplicationContext
+[INFO ] 2021-08-01 14:30:46.756 [restartedMain] ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1150 ms
+[INFO ] 2021-08-01 14:30:46.843 [restartedMain] HikariDataSource - HikariPool-1 - Starting...
+[INFO ] 2021-08-01 14:30:46.960 [restartedMain] HikariDataSource - HikariPool-1 - Start completed.
+[INFO ] 2021-08-01 14:30:46.992 [restartedMain] LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+[INFO ] 2021-08-01 14:30:47.027 [restartedMain] Version - HHH000412: Hibernate ORM core version 5.4.28.Final
+[INFO ] 2021-08-01 14:30:47.130 [restartedMain] Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[INFO ] 2021-08-01 14:30:47.221 [restartedMain] Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+[INFO ] 2021-08-01 14:30:47.625 [restartedMain] JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[INFO ] 2021-08-01 14:30:47.633 [restartedMain] LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[WARN ] 2021-08-01 14:30:47.894 [restartedMain] JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[INFO ] 2021-08-01 14:30:47.994 [restartedMain] DefaultSecurityFilterChain - Will secure Ant [pattern='/css/**'] with []
+[INFO ] 2021-08-01 14:30:47.995 [restartedMain] DefaultSecurityFilterChain - Will secure Ant [pattern='/js/**'] with []
+[INFO ] 2021-08-01 14:30:47.995 [restartedMain] DefaultSecurityFilterChain - Will secure Ant [pattern='/img/**'] with []
+[INFO ] 2021-08-01 14:30:47.996 [restartedMain] DefaultSecurityFilterChain - Will secure Ant [pattern='/templates/menu.html'] with []
+[INFO ] 2021-08-01 14:30:48.020 [restartedMain] DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@b419238, org.springframework.security.web.context.SecurityContextPersistenceFilter@1666083c, org.springframework.security.web.header.HeaderWriterFilter@40097206, org.springframework.security.web.csrf.CsrfFilter@6b96744e, org.springframework.security.web.authentication.logout.LogoutFilter@279f02ab, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@24cd0f7c, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2f36a5bb, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@34dc0333, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3174a09d, org.springframework.security.web.session.SessionManagementFilter@2000a77a, org.springframework.security.web.access.ExceptionTranslationFilter@421e67f4, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@22acaa72]
+[INFO ] 2021-08-01 14:30:48.099 [restartedMain] ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+[INFO ] 2021-08-01 14:30:48.262 [restartedMain] OptionalLiveReloadServer - LiveReload server is running on port 35729
+[INFO ] 2021-08-01 14:30:48.274 [restartedMain] Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+[INFO ] 2021-08-01 14:30:48.290 [restartedMain] TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+[INFO ] 2021-08-01 14:30:48.297 [restartedMain] CocoApplication - Started CocoApplication in 3.025 seconds (JVM running for 4.142)
+[INFO ] 2021-08-01 14:30:54.978 [http-nio-8080-exec-1] [/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[INFO ] 2021-08-01 14:30:54.979 [http-nio-8080-exec-1] DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[INFO ] 2021-08-01 14:30:54.979 [http-nio-8080-exec-1] DispatcherServlet - Completed initialization in 0 ms
+[INFO ] 2021-08-01 14:30:59.439 [http-nio-8080-exec-3] UserController - 이메일 데이터 전송 확인
+[INFO ] 2021-08-01 14:30:59.440 [http-nio-8080-exec-3] UserController - 인증번호 : aaaa

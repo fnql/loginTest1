@@ -23,17 +23,17 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 
     @Override
     public void configure(WebSecurity web){
-        web.ignoring().antMatchers("/css/**", "/js/**", "/img/**");
+        web.ignoring().antMatchers("/css/**", "/js/**", "/img/**","/templates/menu.html");
     }
 
     @Override
     protected void configure(HttpSecurity http) throws Exception{
             http
                     .authorizeRequests()
-                        .antMatchers("/login", "/signup", "/main").permitAll()
+                        .antMatchers("/login", "/signup", "/main","/ajaxTest","/menu").permitAll()
                         .antMatchers("/").hasRole("USER")
                         .antMatchers("/admin").hasRole("ADMIN")
-                        .anyRequest().authenticated()
+//                        .anyRequest().authenticated()
                     .and()
                         .formLogin()
                             .loginPage("/login")

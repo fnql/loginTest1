@@ -40,7 +40,7 @@ public class UserService implements UserDetailsService {
 
     public int userIdCheck(String user_id) {
         System.out.println("user_id = " + user_id);
-        return userRepository.existsByName(user_id);
+        return (userRepository.existsByName(user_id))? 1 :0 ;
     }
 
 }
