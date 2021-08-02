@@ -53,3 +53,10 @@ span{
     background-color: #ececf7;
     cursor: pointer;
 }
+
+.correct{
+    color : green;
+}
+.incorrect{
+    color : red;
+}

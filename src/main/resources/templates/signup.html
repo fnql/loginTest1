@@ -15,19 +15,20 @@
         email :
     </div>
     <div class="email_input_box" >
-        <input type="text" name="email" class="email_input" ><br>
+        <input type="text" name="email" class="email_input" required><br>
     </div>
     <div class="email_check">
         <div class = "email_check_input_box"  id="email_check_false">
-            <input class="email_check_input" disabled = "disabled">
+            <input class="email_check_input" disabled = "disabled" required>
         </div>
         <div class="email_check_button">
             <span>인증번호 전송</span>
         </div>
         <div class="clearfix"></div>
+        <span id="email_check_input_box_warn"></span>
     </div>
 
-    password : <input type="password" name="password"> <br>
+    password : <input type="password" name="password" required> <br>
 
     <!--닉네임 중복 검사-->
     <div class="form-group">
@@ -37,7 +38,7 @@
     </div>
 
     addr :
-    <input id="member_addr" type="text" name="addr" placeholder="Address" style="width: 200px" readonly onclick="findAddr()"> <br>
+    <input id="member_addr" type="text" name="addr" placeholder="Address" style="width: 200px" readonly onclick="findAddr()" required> <br>
 
     취미 :  <select name="hobby">
         <option value="운동">운동</option>
@@ -47,7 +48,7 @@
         <option value="이야기">이야기</option>
     </select> <br>
     auth: <input type="radio" name="auth" value="ROLE_ADMIN,ROLE_USER"> admin
-    <input type="radio" name="auth" value="ROLE_USER" checked="checked"> user <br>
+    <input type="radio" name="auth" value="ROLE_USER" checked="checked" required> user <br>
     <button type="submit">Join</button>
 </form> <br>
 
@@ -73,13 +74,41 @@
     }
 </script>
 <script>
+    var code = "";
     $(".email_check_button").click(function(){
-        var email = $('.email_input').val();        // 입력한 이메일
+        var email = $(".email_input").val();            // 입력한 이메일
+        var checkBox = $(".email_check_input");         // 인증번호 입력란
+        var boxWrap = $(".email_check_input_box");      // 인증번호 입력란 박스
+
         $.ajax({
+
             url:"/mailCheck?email=" + email,
-            type : 'get'
+            type : 'get',
+            success:function (data){
+                //console.log("data = " + data);
+
+                checkBox.attr("disabled", false);
+                boxWrap.attr("id", "email_check_true");
+                code = data;
+            }
         });
     });
+
+    /* 인증번호 비교 */
+    $(".email_check_input").blur(function(){
+
+        var inputCode = $(".email_check_input").val(); //입력
+        var checkResult = $("#email_check_input_box_warn"); //비교 결과
+
+        if(inputCode == code){                            // 일치할 경우
+            checkResult.html("인증번호가 일치합니다.");
+            checkResult.attr("class", "correct");
+        } else {                                            // 일치하지 않을 경우
+            checkResult.html("인증번호를 다시 확인해주세요.");
+            checkResult.attr("class", "incorrect");
+        }
+    });
+
 
     // 아이디 유효성 검사(1 = 중복 / 0 != 중복)
     $("#user_id").blur(function() {
@@ -90,7 +119,7 @@
             url : '/user/idCheck?userId='+ user_id,
             type : 'get',
             success : function(data) {
-                console.log("1 = 중복o / 0 = 중복x : "+ data);
+                console.log("1 = 중복, 0 = OK-- "+ data);
 
                 if (data == 1) {
                     // 1 : 아이디가 중복되는 문구

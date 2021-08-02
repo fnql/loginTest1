@@ -21,7 +21,7 @@ select * from co_member;
 주소 api 승인키 : devU01TX0FVVEgyMDIxMDcwOTEwMjIxNzExMTM4ODA=
 
 //TODO: fin 2021-07-22 취미 어떻게 넣어야 잘 넣어다고 소문이 날까...
-//TODO: 이메일 본인 확인
+//TODO: fin 2021-08-02 이메일 본인 확인
 //TODO: fin 2021-07-26 닉네임 중복 검사
 //TODO: 2021-07-23 카카오 로그인 기능 추가하기
-//TODO: DB입력 버그- 입력 창이 비어있어도 회원가입이 됨
+//TODO: input error - 입력 창이 비거나, 양식 외에 회원가입이 됨
