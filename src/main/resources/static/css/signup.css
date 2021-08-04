@@ -60,3 +60,26 @@ span{
 .incorrect{
     color : red;
 }
+
+#alert-success{
+    color : #53FF4C;
+}
+#alert-danger{
+    color : red;
+}
+
+.final_pw_ck{
+    display: none;
+}
+.final_pwck_ck{
+    display: none;
+}
+.final_name_ck{
+    display: none;
+}
+.final_mail_ck{
+    display: none;
+}
+.final_addr_ck{
+    display: none;
+}

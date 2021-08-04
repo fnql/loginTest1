@@ -9,17 +9,18 @@
 <body>
 <h1>Sign Up</h1> <hr>
 
-<form th:action="@{/main}" method="POST">
+<form th:action="@{/main}" method="POST" id="join_form">
 
     <div>
         email :
     </div>
     <div class="email_input_box" >
-        <input type="text" name="email" class="email_input" required><br>
+        <input type="text" name="email" class="email_input" ><br>
     </div>
+    <span class="final_mail_ck">이메일을 입력해주세요.</span>
     <div class="email_check">
         <div class = "email_check_input_box"  id="email_check_false">
-            <input class="email_check_input" disabled = "disabled" required>
+            <input class="email_check_input" disabled = "disabled" >
         </div>
         <div class="email_check_button">
             <span>인증번호 전송</span>
@@ -27,18 +28,30 @@
         <div class="clearfix"></div>
         <span id="email_check_input_box_warn"></span>
     </div>
-
-    password : <input type="password" name="password" required> <br>
+    <div>
+        password : <input type="password" id="pwd1" name="password" class="pw_input" > <br>
+        <span class="final_pw_ck">비밀번호를 입력해주세요.</span>
+    </div>
+    <div>
+        비밀번호 확인
+        <input type="password" name="pwck" id="pwd2" class="pwck_input"  />
+        <div id="alert-success">비밀번호가 일치합니다.</div>
+        <div id="alert-danger">비밀번호가 일치하지 않습니다.</div>
+        <span class="final_pwck_ck">비밀번호 확인을 입력해주세요.</span>
+    </div>
 
     <!--닉네임 중복 검사-->
     <div class="form-group">
         <label for="user_id">닉네임</label>
-        <input type="text" class="form-control" id="user_id" name="name" placeholder="ID" required>
+        <input type="text" class="user_input" id="user_id" name="name" placeholder="ID" required>
+        <span class="final_name_ck">이름을 입력해주세요.</span>
         <div class="check_font" id="id_check"></div>
     </div>
-
-    addr :
-    <input id="member_addr" type="text" name="addr" placeholder="Address" style="width: 200px" readonly onclick="findAddr()" required> <br>
+    <div>
+        addr :
+        <input id="member_addr" type="text" name="addr" class="address_input" style="width: 200px" readonly onclick="findAddr()" > <br>
+        <span class="final_addr_ck">주소를 입력해주세요.</span>
+    </div>
 
     취미 :  <select name="hobby">
         <option value="운동">운동</option>
@@ -49,13 +62,70 @@
     </select> <br>
     auth: <input type="radio" name="auth" value="ROLE_ADMIN,ROLE_USER"> admin
     <input type="radio" name="auth" value="ROLE_USER" checked="checked" required> user <br>
-    <button type="submit">Join</button>
+    <button type="button" class="join_btn">Join</button>
 </form> <br>
 
 <a href="/login">Go to login →</a>
 
 </body>
 <script>
+    var mailCheck = false;          // 이메일
+    var mailnumCheck = false;       // 이메일 인증번호 확인
+    var pwCheck = false;            // 비번
+    var pwckCheck = false;          // 비번 확인
+    var nameCheck = false;          // 이름
+    var pwckcorCheck = false;       // 비번 확인 일치 확인
+    var addressCheck = false        // 주소
+
+    $(document).ready(function(){
+        $("#alert-success").hide();
+        $("#alert-danger").hide();
+        console.log("dkdkdkdk")
+        $("input").keyup(function(){
+            var pwd1=$("#pwd1").val();
+            var pwd2=$("#pwd2").val();
+            if(pwd1 != "" || pwd2 != ""){
+                if(pwd1 == pwd2){
+                    $("#alert-success").show();
+                    $("#alert-danger").hide();
+                    $('.final_pwck_ck').css('display', 'none');
+                    $("#submit").removeAttr("disabled"); }
+                else{
+                    $("#alert-success").hide();
+                    $("#alert-danger").show();
+                    $("#submit").attr("disabled", "disabled");
+                }
+            }
+        });
+
+        //회원가입 버튼(회원가입 기능 작동)
+        $(".join_btn").click(function(){
+            var mail = $('.email_input').val();            // 이메일 입력란
+            var pw = $('.pw_input').val();                // 비밀번호 입력란
+            var pwck = $('.pwck_input').val();            // 비밀번호 확인 입력란
+            var name = $('.user_input').val();            // 이름 입력란
+            var addr = $('.address_input').val();       // 주소 입력란
+
+            if(pw == ""){
+                $('.final_pw_ck').css('display','block');
+                pwCheck = false;
+            }else{
+                $('.final_pw_ck').css('display', 'none');
+                pwCheck = true;
+            }
+
+            if(pwck == ""){
+                $('.final_pwck_ck').css('display','block');
+                pwckCheck = false;
+            }else{
+                $('.final_pwck_ck').css('display', 'none');
+                pwckCheck = true;
+            }
+
+            // $("#join_form").submit();
+        });
+    });
+
     function findAddr(){
         new daum.Postcode({
             oncomplete: function(data) {
@@ -72,8 +142,7 @@
             }
         }).open();
     }
-</script>
-<script>
+
     var code = "";
     $(".email_check_button").click(function(){
         var email = $(".email_input").val();            // 입력한 이메일
@@ -97,12 +166,16 @@
     /* 인증번호 비교 */
     $(".email_check_input").blur(function(){
 
+        var email = $(".email_input");
+        var inputCodeDis = $(".email_check_input");
         var inputCode = $(".email_check_input").val(); //입력
         var checkResult = $("#email_check_input_box_warn"); //비교 결과
 
         if(inputCode == code){                            // 일치할 경우
             checkResult.html("인증번호가 일치합니다.");
             checkResult.attr("class", "correct");
+            email.attr("disabled", true);
+            inputCodeDis.attr("disabled", true);
         } else {                                            // 일치하지 않을 경우
             checkResult.html("인증번호를 다시 확인해주세요.");
             checkResult.attr("class", "incorrect");
@@ -115,6 +188,9 @@
         // id = "id_reg" / name = "userId"
         var user_id = $('#user_id').val();
         var idJ = /^[a-z0-9가-힣]{2,10}$/;
+        // 특수문사 가능
+        var pwJ = /^[0-9a-zA-Z]([-_.]?[0-9a-zA-Z]){8,20}$/i;
+
         $.ajax({
             url : '/user/idCheck?userId='+ user_id,
             type : 'get',
@@ -152,6 +228,7 @@
             }
         });
     });
+
 </script>
 <script src="//t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
 </html>
