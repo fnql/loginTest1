@@ -8,7 +8,7 @@ create table co_member(
     email varchar(50) primary key not null,
     name varchar(20) unique key,
     password varchar(255),
-    auth varchar(20),
+    auth varchar(100),
     hobby varchar(20),
     addr varchar(20)
 );
@@ -24,7 +24,7 @@ select * from co_member;
 //TODO: fin 2021-08-02 이메일 본인 확인
 //TODO: fin 2021-07-26 닉네임 중복 검사
 //TODO: 2021-07-23 카카오 로그인 기능 추가하기
-//TODO: 유효성 검사 - 입력 창이 비거나, 양식 외에 회원가입이 됨
+//TODO: fin 2021-08-06 유효성 검사
 
 918079045792-2t4t5dqtdfgdj75d6vqshnuj3jm6lrr3.apps.googleusercontent.com
 q5dRwKeubnhuXtsK55uF7PWc
