@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
-<head>
+<head profile="http://www.w3.org/2005/10/profile">
     <meta charset="UTF-8" name="google-signin-client_id" content="918079045792-2t4t5dqtdfgdj75d6vqshnuj3jm6lrr3.apps.googleusercontent.com">
     <title>login</title>
     <link rel="stylesheet" href="./css/login.css">
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
     <script src="./js/main.js"></script>
     <script src="https://apis.google.com/js/platform.js" async defer></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 <body>
     <div class="wrapper">
@@ -111,6 +112,34 @@
             });
         }
         location.href= "/user/logOut.do"
+    }
+
+    function googleLoginPro(response){
+        var data = {id:response.id,email:response.kakao_account.email}
+        $.ajax({
+            type : 'POST',
+            url : '/googleLoginPro',
+            data : data,
+            dataType : 'json',
+            success : function(data){
+                console.log(data)
+                if(data.JavaData == "YES"){
+                    alert("로그인되었습니다.");
+                    location.href = '/main'
+                }else if(data.JavaData == "register"){
+                    $("#googleEmail").val(response.google_account.email);
+                    $("#googleId").val(response.id);
+                    $("#googleForm").submit();
+                }else{
+                    alert("로그인에 실패했습니다");
+                }
+
+            },
+            error: function(xhr, status, error){
+                alert("로그인에 실패했습니다."+error);
+            }
+        });
+
     }
 </script>
 </html>
