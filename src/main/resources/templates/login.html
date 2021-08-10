@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
 <head profile="http://www.w3.org/2005/10/profile">
-    <meta charset="UTF-8" name="google-signin-client_id" content="918079045792-2t4t5dqtdfgdj75d6vqshnuj3jm6lrr3.apps.googleusercontent.com">
+<!--    <meta charset="UTF-8" name="google-signin-client_id" content="">-->
     <title>login</title>
     <link rel="stylesheet" href="./css/login.css">
+    <script src="https://developers.kakao.com/sdk/js/kakao.js"></script>
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
     <script src="./js/main.js"></script>
-    <script src="https://apis.google.com/js/platform.js" async defer></script>
+<!--    <script src="https://apis.google.com/js/platform.js" async defer></script>-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
 </head>
 <body>
     <div class="wrapper">
@@ -48,9 +50,12 @@
                         </div>
                         <button type="submit">Login</button>
 <!--                        <input type="submit" title="로그인" alt="로그인" value="로그인" class="login">-->
-                        <a class="g-signin2"  onClick="onSignIn()">Google Login</a>
+<!--                        <a class="g-signin2"  onClick="onSignIn()">Google Login</a>-->
 <!--                    check_info 작업 예정-->
-                        <a href="javascript:kakaoLogin()">kakako Login</a>
+<!--                        <a href="javascript:kakaoLogin()">kakako Login</a>-->
+                        <div class="kakaoLogin">
+                            <span>카카오로그인</span>
+                        </div>
                         <div class="check_info">
                             <span class="check_box">
                                 <input type="checkbox" name="nvlong">
@@ -90,17 +95,19 @@
     </div>
 </body>
 <script>
-    $(document).ready(function (){
+    $(".kakaoLogin").click(function (){
+
        $.ajax({
-           type : 'POST',
+
            url: '/getKakaoApi',
-           data : {},
+           type : 'POST',
+           data: {},
            dataType : 'text',
            success : function (data){
                Kakao.init(data);
            },
-           error : function (xhr, status, error){
-               alert("API 등록에 실패했습니다. " + error);
+           error : function (data){
+               alert("API 등록에 실패했습니다. " + data);
            }
        }) ;
     });
@@ -204,5 +211,5 @@
     }
 
 </script>
-<script src="https://developers.kakao.com/sdk/js/kakao.js"></script>
+
 </html>
