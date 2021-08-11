@@ -166,7 +166,7 @@
     function kakaoLoginPro(response){
         var data = {id:response.id,email:response.kakao_account.email}
         $.ajax({
-            type : 'POST',
+            type : 'get',
             url : '/kakaoLoginPro',
             data : data,
             dataType : 'json',
