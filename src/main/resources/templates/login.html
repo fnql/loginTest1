@@ -172,7 +172,7 @@
             dataType : 'json',
             success : function(data){
                 console.log(data)
-                if(data.JavaData == "YES"){
+                if(data.JavaData.equal("Yes")){
                     alert("로그인되었습니다.");
                     location.href = '/main'
                 }else if(data.JavaData == "register"){
@@ -194,9 +194,10 @@
         Kakao.Auth.login({
             success: function (response) {
                 Kakao.API.request({
-                    url: '/v2/user/me',
+                    url:  '/v1/api/talk/profile',
                     success: function (response) {
-                        kakaoLoginPro(response)
+                        console.log(response);
+                        kakaoLoginPro(response);
                     },
                     fail: function (error) {
                         console.log(error)
