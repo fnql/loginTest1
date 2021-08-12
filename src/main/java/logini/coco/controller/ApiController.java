@@ -14,7 +14,7 @@ public class ApiController {
 
     @GetMapping("/getKakaoApi")
     public String getKakaoApi()  {
-        System.out.println("getKakaoApi");
+        System.out.println(kakaoApi);
         return kakaoApi;
     }
 
