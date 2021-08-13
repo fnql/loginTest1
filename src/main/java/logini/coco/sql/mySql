@@ -10,7 +10,8 @@ create table co_member(
     password varchar(255),
     auth varchar(100),
     hobby varchar(20),
-    addr varchar(20)
+    addr varchar(20),
+    kakaoLogin varchar(30)
 );
 
 delete from co_member where name="";
