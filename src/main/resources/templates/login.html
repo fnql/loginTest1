@@ -194,7 +194,7 @@
         Kakao.Auth.login({
             success: function (response) {
                 Kakao.API.request({
-                    url:  '/v1/api/talk/profile',
+                    url:  '/v2/user/me',
                     success: function (response) {
                         console.log(response);
                         kakaoLoginPro(response);
