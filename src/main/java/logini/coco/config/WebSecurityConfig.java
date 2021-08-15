@@ -42,9 +42,9 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
                     .and()
                         .logout()
                             .logoutSuccessUrl("/login")
-                            .invalidateHttpSession(true)
-                    .and()
-                        .oauth2Login();
+                            .invalidateHttpSession(true);
+                    //.and()
+                    //    .oauth2Login();
     }
 
     @Bean
