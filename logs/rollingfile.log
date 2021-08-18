@@ -1,1 +1,8 @@
-[INFO ] 2021-08-01 14:30:59.440 [http-nio-8080-exec-3] UserController - 인증번호 : aaaa
+[INFO ] 2021-08-18 17:54:23.434 [restartedMain] ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+[INFO ] 2021-08-18 17:54:23.668 [restartedMain] OptionalLiveReloadServer - LiveReload server is running on port 35729
+[INFO ] 2021-08-18 17:54:23.700 [restartedMain] Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+[INFO ] 2021-08-18 17:54:23.731 [restartedMain] TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+[INFO ] 2021-08-18 17:54:23.746 [restartedMain] CocoApplication - Started CocoApplication in 4.19 seconds (JVM running for 5.962)
+[INFO ] 2021-08-18 17:54:45.767 [http-nio-8080-exec-1] [/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[INFO ] 2021-08-18 17:54:45.767 [http-nio-8080-exec-1] DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[INFO ] 2021-08-18 17:54:45.769 [http-nio-8080-exec-1] DispatcherServlet - Completed initialization in 2 ms
