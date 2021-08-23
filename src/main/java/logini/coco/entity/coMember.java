@@ -57,10 +57,22 @@ public class coMember implements UserDetails {
         return roles;
     }
 
+    public coMember update(String name) {
+        this.name = name;
+
+        return this;
+    }
+
+    //구현해야되는데...
     @Override
     public String getUsername(){
         return email;
     }
+
+    public String getAuth(){
+        return auth;
+    }
+
     @Override
     public String getPassword(){
         return password;

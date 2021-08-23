@@ -1,6 +1,7 @@
 package logini.coco.service;
 
 
+import logini.coco.auth.OAuthAttributes;
 import logini.coco.entity.SessionUser;
 import logini.coco.entity.coMember;
 import logini.coco.repository.UserRepository;
@@ -38,7 +39,7 @@ public class CustomOAuth2UserService implements OAuth2UserService<OAuth2UserRequ
         coMember user = saveOrUpdate(attributes);
         httpSession.setAttribute("user", new SessionUser(user)); // SessionUser (직렬화된 dto 클래스 사용)
 
-        return new DefaultOAuth2User(Collections.singleton(new SimpleGrantedAuthority(user.getRoleKey())),
+        return new DefaultOAuth2User(Collections.singleton(new SimpleGrantedAuthority(user.getAuth())),
                 attributes.getAttributes(),
                 attributes.getNameAttributeKey());
     }
@@ -46,7 +47,7 @@ public class CustomOAuth2UserService implements OAuth2UserService<OAuth2UserRequ
     // 유저 생성 및 수정 서비스 로직
     private coMember saveOrUpdate(OAuthAttributes attributes){
         coMember user = userRepository.findByEmail(attributes.getEmail())
-                .map(entity -> entity.update(attributes.getName(), attributes.getPicture()))
+                .map(entity -> entity.update(attributes.getName()))
                 .orElse(attributes.toEntity());
         return userRepository.save(user);
     }
