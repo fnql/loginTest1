@@ -23,7 +23,11 @@ public class OAuthAttributes {
         this.name = name;
         this.email = email;
     }
+    public static OAuthAttributes of(String registrationId, String userNameAttributeName, Map<String, Object> attributes){
+        // 여기서 네이버와 카카오 등 구분 (ofNaver, ofKakao)
 
+        return ofGoogle(userNameAttributeName, attributes);
+    }
     private static OAuthAttributes ofGoogle(String userNameAttributeName,
                                             Map<String , Object> attributes){
         return OAuthAttributes.builder()
