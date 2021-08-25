@@ -42,6 +42,7 @@ public class UserController {
     @Autowired
     private UserService userService;
 
+    //메인 화면 말고 회원가입 화면
     @GetMapping("/")
     public String index(Model model){
         model.addAttribute("posts", userService.findAllDesc());
