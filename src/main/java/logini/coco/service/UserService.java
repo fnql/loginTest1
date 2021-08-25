@@ -4,11 +4,13 @@ import logini.coco.dto.UserInfoDto;
 import logini.coco.entity.coMember;
 import logini.coco.repository.UserRepository;
 import lombok.RequiredArgsConstructor;
+import org.springframework.data.domain.Sort;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
 import java.util.Optional;
 
 @RequiredArgsConstructor
@@ -22,6 +24,10 @@ public class UserService implements UserDetailsService {
     public coMember loadUserByUsername(String email) throws UsernameNotFoundException{
         return userRepository.findByEmail(email)
                 .orElseThrow(() -> new UsernameNotFoundException(email));
+    }
+
+    public List<coMember> findAllDesc(){
+        return userRepository.findAll();
     }
 
     //회원 정보 저장 return 회원의 PK

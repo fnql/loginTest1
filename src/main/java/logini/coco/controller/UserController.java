@@ -3,6 +3,7 @@ package logini.coco.controller;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import logini.coco.dto.MailDto;
 import logini.coco.dto.UserInfoDto;
+import logini.coco.entity.SessionUser;
 import logini.coco.service.MailService;
 import logini.coco.service.UserService;
 import lombok.RequiredArgsConstructor;
@@ -36,9 +37,22 @@ import static logini.coco.service.MailService.*;
 public class UserController {
 
     private static final Logger logger = LogManager.getLogger(UserController.class);
+    private final HttpSession httpSession;
 
     @Autowired
     private UserService userService;
+
+    @GetMapping("/")
+    public String index(Model model){
+        model.addAttribute("posts", userService.findAllDesc());
+
+        SessionUser user = (SessionUser) httpSession.getAttribute("user");
+
+        if(user != null){
+            model.addAttribute("userName", user.getEmail());
+        }
+        return "main";
+    }
 
     //get으로 받으면 오류나요~
     @PostMapping("/main")

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
     <title>main</title>
@@ -55,7 +55,8 @@
         <!-- GNB 메뉴 끝 -->
         <aside>
             <h2>회원 전용 페이지</h2>
-            ID : <span sec:authentication="name"></span> <br>
+<!--            ID : <span sec:authentication="name"></span> <br>-->
+            ID: <h4 th:text="${userName}"></h4><br>
             소유 권한 : <span sec:authentication="authorities"></span> <br>
             <h3>안녕하세요! <span sec:authentication="principal.name"></span>님</h3>
 <!--            집 : <span sec:authentication="principal.addr"></span> <br>-->
