@@ -43,7 +43,7 @@ public class UserController {
     private UserService userService;
 
     //메인 화면 말고 회원가입 화면
-    @GetMapping("/")
+    @GetMapping("/coLogin")
     public String index(Model model){
         model.addAttribute("posts", userService.findAllDesc());
 
@@ -59,7 +59,7 @@ public class UserController {
     @PostMapping("/main")
     public String signup(UserInfoDto infoDto) {
         userService.save(infoDto);
-        return "redirect:/login";
+        return "redirect:/main";
     }
 
     @GetMapping(value = "/logout")
