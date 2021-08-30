@@ -43,7 +43,7 @@ public class UserController {
     private UserService userService;
 
     //메인 화면 말고 회원가입 화면
-    @GetMapping("/coLogin")
+    @GetMapping("/")
     public String index(Model model){
         model.addAttribute("posts", userService.findAllDesc());
 
@@ -52,6 +52,7 @@ public class UserController {
         if(user != null){
             model.addAttribute("userName", user.getEmail());
         }
+
         return "main";
     }
 
