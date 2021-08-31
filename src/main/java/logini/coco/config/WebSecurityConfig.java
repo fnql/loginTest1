@@ -26,7 +26,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
     public void configure(WebSecurity web){
         web.ignoring().antMatchers("/css/**", "/js/**", "/img/**","/templates/menu.html");
     }
-
+    // 커밋
     @Override
     protected void configure(HttpSecurity http) throws Exception{
             http
