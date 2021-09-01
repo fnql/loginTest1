@@ -2,7 +2,7 @@ spring:
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://localhost:3306/coconoon?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=Asia/Seoul
-    password: admin
+    password: 1234
     username: root
   #rudflxla12 admin 1234
   mail:

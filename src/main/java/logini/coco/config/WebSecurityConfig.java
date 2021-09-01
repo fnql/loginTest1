@@ -31,18 +31,18 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
     protected void configure(HttpSecurity http) throws Exception{
             http
                     .authorizeRequests()
-                        .antMatchers("/login", "/signup", "/main","/ajaxTest","/menu").permitAll()
+                        .antMatchers("/coLogin", "/signup", "/main","/ajaxTest","/menu").permitAll()
                         .antMatchers("/").hasRole("USER")
                         .antMatchers("/admin").hasRole("ADMIN")
 
                         .anyRequest().authenticated()
                     .and()
                         .formLogin()
-                            .loginPage("/login")
+                            .loginPage("/coLogin")
                             .defaultSuccessUrl("/main")
                     .and()
                         .logout()
-                            .logoutSuccessUrl("/login")
+                            .logoutSuccessUrl("/coLogin")
                             .invalidateHttpSession(true)
                     .and()
                         .oauth2Login()
