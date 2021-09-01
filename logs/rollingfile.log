@@ -1,8 +1,0 @@
-[INFO ] 2021-08-27 15:47:30.997 [restartedMain] ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
-[INFO ] 2021-08-27 15:47:31.267 [restartedMain] OptionalLiveReloadServer - LiveReload server is running on port 35729
-[INFO ] 2021-08-27 15:47:31.285 [restartedMain] Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
-[INFO ] 2021-08-27 15:47:31.308 [restartedMain] TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
-[INFO ] 2021-08-27 15:47:31.318 [restartedMain] CocoApplication - Started CocoApplication in 5.132 seconds (JVM running for 6.772)
-[INFO ] 2021-08-27 15:47:34.520 [http-nio-8080-exec-1] [/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-[INFO ] 2021-08-27 15:47:34.520 [http-nio-8080-exec-1] DispatcherServlet - Initializing Servlet 'dispatcherServlet'
-[INFO ] 2021-08-27 15:47:34.521 [http-nio-8080-exec-1] DispatcherServlet - Completed initialization in 1 ms
