@@ -52,7 +52,7 @@ public class UserController {
         if(user != null){
             model.addAttribute("userName", user.getEmail());
         }
-
+        logger.info("메인 페이지 호출");
         return "main";
     }
 
@@ -60,13 +60,13 @@ public class UserController {
     @PostMapping("/login")
     public String signup(UserInfoDto infoDto) {
         userService.save(infoDto);
-        return "redirect:/main";
+        return "redirect:/coLogin";
     }
 
     @GetMapping(value = "/logout")
     public String logoutPage(HttpServletRequest request, HttpServletResponse response) {
         new SecurityContextLogoutHandler().logout(request, response, SecurityContextHolder.getContext().getAuthentication());
-        return "redirect:/login";
+        return "redirect:/coLogin";
     }
 
     @RequestMapping(value = "/user/idCheck", method = RequestMethod.GET)
