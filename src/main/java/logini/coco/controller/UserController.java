@@ -57,7 +57,7 @@ public class UserController {
     }
 
     //get으로 받으면 오류나요~
-    @PostMapping("/login")
+    @PostMapping("/user")
     public String signup(UserInfoDto infoDto) {
         userService.save(infoDto);
         return "redirect:/coLogin";
