@@ -10,7 +10,7 @@ public class MvcConfig implements WebMvcConfigurer {
     //getMapping 안받고 쉽게 쓰기
     public void addViewControllers(ViewControllerRegistry registry){
         //registry.addViewController("/").setViewName("main");
-        registry.addViewController("/coLogin").setViewName("login");
+        registry.addViewController("/coLogin").setViewName("coLogin");
         registry.addViewController("/admin").setViewName("admin");
         registry.addViewController("/signup").setViewName("signup");
         registry.addViewController("/ajaxTest").setViewName("ajaxTest");
